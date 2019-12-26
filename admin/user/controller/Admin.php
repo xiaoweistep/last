@@ -44,8 +44,15 @@ class Admin extends admincommon
         $this->assign('log',$list);
         return $this->fetch(":adminlog");
     }
-
-
+    /**
+     * @return mixed 退出登录
+     */
+    public function loginOut()
+    {
+        session('ADMIN_ID', null);
+        session('ADMIN', null);
+        return $this->redirect('user/login/login');
+    }
 
 }
 ?>

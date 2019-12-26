@@ -48,10 +48,7 @@ class Login extends Controller
         if($user['user_status'] == 1){
             return $this->errorReturn('该用户已禁用');
         }
-
         return $this->userToken($user);
-
-
     }
     public function captchaImg()
     {
@@ -124,5 +121,6 @@ class Login extends Controller
 
         if (empty($res)) return $this->errorReturn("日志写入失败！");
     }
+
 }
 ?>

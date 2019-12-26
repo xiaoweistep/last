@@ -43,8 +43,8 @@
                     <td>{$logs.admin_name}</td>
                     <td>{$logs.action}</td>
                     <td>{$logs.ip}</td>
-                    <td>{$logs.operate_time}</td>
-                
+                    <td>{date('Y-m-d H:m:s',$logs.operate_time)}</td>
+
                     <td><div class="button-group"> <a class="button border-red" href="javascript:void(0)" onclick="return del(1)"><span class="icon-trash-o"></span> 删除</a> </div></td>
                 </tr>
 

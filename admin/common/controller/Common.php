@@ -15,13 +15,14 @@ class Common extends  Controller
      * @return mixed
      */
      protected function is_login(){
-        $user = session('?adminuser');
-//        if (!$user) {
-//            return $this->redirect("user/login/login");
-//        } else {
-//            $user=session('adminuser');
-//            return  $user;
-//        }
+        $user = session('?ADMIN');
+
+        if (!$user) {
+            return $this->redirect("user/login/login");
+        } else {
+            $user=session('ADMIN');
+            return  $user;
+        }
     }
 }
 

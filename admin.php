@@ -13,7 +13,8 @@
 define("APP_NAMESPACE", 'admin');
 // 定义APP根目录,可更改此目录
 define('APP_ROOT', __DIR__ . '/');
-define('STATIC_PATH', '/public/static');
+//define('STATIC_PATH', '/public/static');
+define('STATIC_PATH', '/../public/static/admin');
 define('PUBLIC_PATH', '/public/');
 
 // 定义应用目录
