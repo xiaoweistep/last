@@ -5,13 +5,11 @@ class Index extends commonUser
 {
     public function index()
     {
-       // var_dump($this->request->domain());
-        return $this->fetch('index');
+
+       echo 1;
+
     }
-    public function info()
-    {
-        $config =Config('database');
-        dump($config);die;
-    }
+
+
 
 }

@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:2:{s:58:"E:\phpstudy_pro\WWW\tpframe\admin/user\view\\adminlog.html";i:1577437038;s:57:"E:\phpstudy_pro\WWW\tpframe\admin\common\view\header.html";i:1577678049;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:2:{s:55:"E:\phpstudy_pro\WWW\tpframe\admin/user\view\\admin.html";i:1577669032;s:57:"E:\phpstudy_pro\WWW\tpframe\admin\common\view\header.html";i:1577678049;}*/ ?>
 <!DOCTYPE html>
 <html lang="zh-cn">
 <head>
@@ -81,34 +81,41 @@
     <body>
     <form method="post" action="">
         <div class="panel admin-panel">
-            <div class="panel-head"><strong class="icon-reorder"> 管理员登录日志</strong></div>
+            <div class="panel-head"><strong class="icon-reorder"> 管理员列表</strong></div>
             <div class="padding border-bottom">
-                <ul class="search" style="display: none">
+                <ul class="search">
                     <li>
                         <button type="button"  class="button border-green" id="checkall"><span class="icon-check"></span> 全选</button>
                         <button type="submit" class="button border-red"><span class="icon-trash-o"></span> 批量删除</button>
+                        <button onclick="window.location.href='<?php echo url('user/Admin/add'); ?>'" type="button"  class="button border-green"><span class="icon-plus-square-o" ></span> 添加管理员</button>
                     </li>
                 </ul>
+
             </div>
+
+
             <table class="table table-hover text-center">
                 <tr>
-                    <th width="120">ID</th>
-                    <th>管理员ID</th>
+                    <th width="120">管理员ID</th>
                     <th>管理员名称</th>
-                    <th>操作</th>
-                    <th width="25%">登录ip</th>
-                    <th width="120">操作时间</th>
+                    <th>手机</th>
+                    <th>邮件</th>
+                    <th>身份类型</th>
+                    <th>状态</th>
+                    <th width="120">创建时间</th>
                     <th>操作</th>
                 </tr>
-                <?php if(is_array($log) || $log instanceof \think\Collection || $log instanceof \think\Paginator): $i = 0; $__LIST__ = $log;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$logs): $mod = ($i % 2 );++$i;?>
+                <?php if(is_array($admin) || $admin instanceof \think\Collection || $admin instanceof \think\Paginator): $i = 0; $__LIST__ = $admin;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$admins): $mod = ($i % 2 );++$i;?>
                 <tr>
                     <td><input type="checkbox" name="id[]" value="1" />
-                        <?php echo $logs['id']; ?></td>
-                    <td> <?php echo $logs['admin_id']; ?></td>
-                    <td><?php echo $logs['admin_name']; ?></td>
-                    <td><?php echo $logs['action']; ?></td>
-                    <td><?php echo $logs['ip']; ?></td>
-                    <td><?php echo date('Y-m-d H:m:s',$logs['operate_time']); ?></td>
+                        <?php echo $admins['id']; ?></td>
+                    <td> <?php echo $admins['user_login']; ?></td>
+
+                    <td><?php echo $admins['mobile']; ?></td>
+                    <td><?php echo $admins['user_email']; ?></td>
+                    <td><?php echo $admins['user_type']; ?></td>
+                    <td><?php echo $admins['user_status']; ?></td>
+                    <td><?php echo $admins['create_time']; ?></td>
 
                     <td><div class="button-group"> <a class="button border-red" href="javascript:void(0)" onclick="return del(1)"><span class="icon-trash-o"></span> 删除</a> </div></td>
                 </tr>
@@ -132,7 +139,7 @@
 <!--                            <a href="">2</a><a href="">3</a><a href="">下一页</a>-->
 <!--                            <a href="">尾页</a>-->
 <!--                        </div>-->
-                        <?php echo $log->render(); ?>
+                        <?php echo $admin->render(); ?>
                     </td>
                 </tr>
             </table>

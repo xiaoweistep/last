@@ -1,7 +1,7 @@
 <?php
 namespace admin\user\model;
-use think\Model;
-class Adminlog extends Model
+use admin\common\model\Common;
+class Adminlog extends Common
 {
 
 }

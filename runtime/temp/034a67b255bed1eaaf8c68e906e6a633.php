@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:2:{s:58:"E:\phpstudy_pro\WWW\tpframe\admin/user\view\\editpass.html";i:1576831851;s:57:"E:\phpstudy_pro\WWW\tpframe\admin\common\view\header.html";i:1577347307;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:2:{s:58:"E:\phpstudy_pro\WWW\tpframe\admin/user\view\\editpass.html";i:1576831851;s:57:"E:\phpstudy_pro\WWW\tpframe\admin\common\view\header.html";i:1577678049;}*/ ?>
 <!DOCTYPE html>
 <html lang="zh-cn">
 <head>
@@ -19,18 +19,23 @@
     <div class="logo margin-big-left fadein-top">
         <h1><img src="/../public/static/admin/images/y.jpg" class="radius-circle rotate-hover" height="50" alt="" />后台管理中心</h1>
     </div>
-    <div class="head-l"><a class="button button-little bg-green" href="" target="_blank"><span class="icon-home"></span> 前台首页</a> &nbsp;&nbsp;<a href="##" class="button button-little bg-blue"><span class="icon-wrench"></span> 清除缓存</a> &nbsp;&nbsp;<a class="button button-little bg-red" href="<?php echo url('user/Login/loginOut'); ?>"><span class="icon-power-off"></span> 退出登录</a> </div>
+    <div class="head-l"><a class="button button-little bg-green" href="" target="_blank"><span class="icon-home"></span> 前台首页</a> &nbsp;&nbsp;<a href="##" class="button button-little bg-blue"><span class="icon-wrench"></span> 清除缓存</a> &nbsp;&nbsp;<a class="button button-little bg-red" href="<?php echo url('user/Admin/loginOut'); ?>"><span class="icon-power-off"></span> 退出登录</a> </div>
 </div>
 <div class="leftnav">
     <div class="leftnav-title"><strong><span class="icon-list"></span>菜单列表</strong></div>
     <h2><span class="icon-user"></span>基本设置</h2>
     <ul style="display:block">
         <li><a href="<?php echo url('Index/index'); ?>" target="right"><span class="icon-caret-right"></span>网站设置</a></li>
-        <li><a href="<?php echo url('user/Admin/editPass'); ?>" target="right"><span class="icon-caret-right"></span>修改密码</a></li>
-        <li><a href="<?php echo url('user/Admin/adminLog'); ?>" target="right"><span class="icon-caret-right"></span>管理员登录日志</a></li>
+
         <li><a href="adv.html" target="right"><span class="icon-caret-right"></span>首页轮播</a></li>
         <li><a href="book.html" target="right"><span class="icon-caret-right"></span>留言管理</a></li>
         <li><a href="column.html" target="right"><span class="icon-caret-right"></span>栏目管理</a></li>
+    </ul>
+    <h2><span class="icon-pencil-square-o"></span>管理员模块</h2>
+    <ul>
+        <li><a href="<?php echo url('user/Admin/index'); ?>" target="right"><span class="icon-caret-right"></span>管理员列表</a></li>
+        <li><a href="<?php echo url('user/Admin/editPass'); ?>" target="right"><span class="icon-caret-right"></span>修改密码</a></li>
+        <li><a href="<?php echo url('user/Admin/adminLog'); ?>" target="right"><span class="icon-caret-right"></span>管理员登录日志</a></li>
     </ul>
     <h2><span class="icon-pencil-square-o"></span>栏目管理</h2>
     <ul>

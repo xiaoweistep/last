@@ -1,8 +1,10 @@
 <?php
 namespace admin\user\model;
-use think\Model;
-class Admin extends Model
+use admin\common\model\Common;
+class Admin extends Common
 {
+
+
     public function authRoleUser()
     {
         return $this->hasOne('admin\auth\model\AuthRoleUser','user_id','id');
@@ -13,4 +15,6 @@ class Admin extends Model
         if(empty($data)) return [];
         return $data->toArray();
     }
+
+
 }

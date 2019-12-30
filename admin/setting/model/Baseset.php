@@ -7,9 +7,9 @@
  */
 namespace admin\setting\model;
 
-use think\Model;
+use admin\common\model\Common;
 
-class Baseset extends Model
+class Baseset extends Common
 {
 
 }

@@ -1,5 +1,6 @@
 <?php
 namespace admin\user\service;
+use admin\user\model\Admin as admimModel;
 use think\Controller;
 use admin\user\model\Admin;
 use admin\user\model\Adminlog;
@@ -12,6 +13,26 @@ class AdminService extends Common
     {
         $this->admin = new Admin();
         parent::__construct();
+    }
+    public function adminIndex()
+    {
+        $list =$this->admin->paginate(10);
+        return $list;
+    }
+    public function saveAdmin()
+    {
+        $data =$this->admin->filterData('tp_admin',$this->request->param());
+        if (!$data['user_login']) return $this->errorReturn('账号必填');
+        if (!$data['user_pass']) return $this->errorReturn('密码必填');
+        $data['user_pass'] = md5($data['user_pass']);
+        $data['create_time'] =time();
+        $res = $this->admin->save($data);
+        if($res){
+            return $this->successReturn('添加成功');
+        }else{
+            return $this->errorReturn('添加失败');
+        }
+
     }
     public function getOld()
     {
@@ -33,8 +54,7 @@ class AdminService extends Common
     }
     public function adminLog()
     {
-
-        $list = (new Adminlog())->all();
+        $list = (new Adminlog())->paginate(10);
         return $list;
 
     }

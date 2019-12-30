@@ -1,7 +1,7 @@
 <?php
 namespace admin\user\controller;
 use admin\common\controller\Common as admincommon;
-use admin\user\model\Adminlog;
+use admin\user\model\Admin as admimModel;
 use admin\user\service\AdminService;
 
 
@@ -10,6 +10,31 @@ class Admin extends admincommon
     public function __construct()
     {
         parent::__construct();
+
+    }
+    /**
+     * @return mixed 管理员列表
+     */
+    public function index()
+    {
+        $list = (new AdminService())->adminIndex();
+        $this->assign('admin',$list);
+        return $this->fetch(":admin");
+    }
+    /**
+     * @return mixed 管理员增加
+     */
+    public function add()
+    {
+        return $this->fetch(":add");
+    }
+    /**
+     * @return mixed 管理员增加
+     */
+    public function save()
+    {
+        return (new AdminService)->saveAdmin();
+
 
     }
 
@@ -40,7 +65,7 @@ class Admin extends admincommon
      */
     public function adminLog()
     {
-        $list = (new Adminlog())->all();
+        $list = (new AdminService())->adminLog();
         $this->assign('log',$list);
         return $this->fetch(":adminlog");
     }

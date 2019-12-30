@@ -63,8 +63,9 @@
             type:"POST",
             data:$("form").serialize(),
             success:function(res){
-                layer.alert(res.msg, {title: "提示",btn:'确定'});
+
                 if(res.code){
+                    layer.alert(res.msg, {title: "提示",btn:'确定'});
                     location.href="{:url('/index/Index/index')}";
                 }else {
                     layer.alert(res.msg, {title: "提示",btn:'确定'});

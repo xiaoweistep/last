@@ -7,10 +7,8 @@
  */
 
 namespace api\user\model;
-
-use think\Model;
-
-class User extends Model
+use admin\common\model\Common;
+class User extends Common
 {
 
 }
