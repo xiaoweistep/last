@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:2:{s:53:"E:\phpstudy_pro\WWW\tpframe/admin/user\view\\add.html";i:1577670199;s:57:"E:\phpstudy_pro\WWW\tpframe\admin\common\view\header.html";i:1577436217;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:2:{s:53:"E:\phpstudy_pro\WWW\tpframe/admin/user\view\\add.html";i:1577677893;s:57:"E:\phpstudy_pro\WWW\tpframe\admin\common\view\header.html";i:1577689050;}*/ ?>
 <!DOCTYPE html>
 <html lang="zh-cn">
 <head>
@@ -26,12 +26,18 @@
     <h2><span class="icon-user"></span>基本设置</h2>
     <ul style="display:block">
         <li><a href="<?php echo url('Index/index'); ?>" target="right"><span class="icon-caret-right"></span>网站设置</a></li>
-        <li><a href="<?php echo url('user/Admin/editPass'); ?>" target="right"><span class="icon-caret-right"></span>修改密码</a></li>
-        <li><a href="<?php echo url('user/Admin/adminLog'); ?>" target="right"><span class="icon-caret-right"></span>管理员登录日志</a></li>
-        <li><a href="<?php echo url('user/Admin/index'); ?>" target="right"><span class="icon-caret-right"></span>管理员列表</a></li>
+
         <li><a href="adv.html" target="right"><span class="icon-caret-right"></span>首页轮播</a></li>
         <li><a href="book.html" target="right"><span class="icon-caret-right"></span>留言管理</a></li>
         <li><a href="column.html" target="right"><span class="icon-caret-right"></span>栏目管理</a></li>
+    </ul>
+    <h2><span class="icon-pencil-square-o"></span>管理员模块</h2>
+    <ul>
+        <li><a href="<?php echo url('user/Admin/index'); ?>" target="right"><span class="icon-caret-right"></span>管理员列表</a></li>
+        <li><a href="<?php echo url('user/Admin/editPass'); ?>" target="right"><span class="icon-caret-right"></span>修改密码</a></li>
+        <li><a href="<?php echo url('user/Admin/adminLog'); ?>" target="right"><span class="icon-caret-right"></span>管理员登录日志</a></li>
+        <li><a href="<?php echo url('user/Role/index'); ?>" target="right"><span class="icon-caret-right"></span>管理员角色列表</a></li>
+        <li><a href="<?php echo url('user/Role/index'); ?>" target="right"><span class="icon-caret-right"></span>角色操作列表</a></li>
     </ul>
     <h2><span class="icon-pencil-square-o"></span>栏目管理</h2>
     <ul>
@@ -78,7 +84,7 @@
     <div class="panel admin-panel">
         <div class="panel-head" id="add"><strong><span class="icon-pencil-square-o"></span>管理员增加</strong></div>
         <div class="body-content">
-            <form method="post" class="form-x" action="">
+            <form method="post" class="form-x" action="<?php echo url('user/Admin/save'); ?>" onsubmit="return submitForm();">
                 <div class="form-group">
                     <div class="label">
                         <label>管理员名称：</label>
@@ -116,7 +122,15 @@
                         <div class="tips"></div>
                     </div>
                 </div>
-
+                <div class="form-group">
+                    <div class="label">
+                        <label>cc：</label>
+                    </div>
+                    <div class="field">
+                        <input type="text" class="input w50" value="" name="cc" data-validate="required:请输入手机" />
+                        <div class="tips"></div>
+                    </div>
+                </div>
                 <div class="form-group">
                     <div class="label">
                         <label>身份类型：</label>
@@ -140,12 +154,7 @@
                     </select>
                     <div class="tips"></div>
                 </div>
-
                 <div class="clear"></div>
-
-
-
-
                 <div class="form-group">
                     <div class="label">
                         <label></label>
@@ -154,12 +163,30 @@
                         <button class="button bg-main icon-check-square-o" type="submit"> 提交</button>
                     </div>
                 </div>
-
             </form>
         </div>
     </div>
-
     </body></html>
+    <script>
+
+        function submitForm(){
+            $.ajax({
+                url:"<?php echo url('Admin/save');?>",
+                type:"POST",
+                data:$("form").serialize(),
+                success:function(res){
+
+                    if(res.code == 1){
+                        layer.alert(res.msg, {title: "提示",btn:'确定'},function () {
+                            location.href="<?php echo url('/user/Admin/index'); ?>";
+                        });
+                    }
+                    console.log(res);
+                }
+            });
+            return false;
+        }
+    </script>
 </div>
 </body>
 </html>

@@ -1,9 +1,8 @@
 <?php
 namespace admin\user\service;
-use admin\user\model\Admin as admimModel;
-use think\Controller;
 use admin\user\model\Admin;
 use admin\user\model\Adminlog;
+use admin\user\model\Role;
 use admin\common\controller\Common;
 use think\Request;
 
@@ -12,11 +11,17 @@ class AdminService extends Common
     public function __construct(Request $request=null)
     {
         $this->admin = new Admin();
+        $this->role = new role();
         parent::__construct();
     }
     public function adminIndex()
     {
         $list =$this->admin->paginate(10);
+        return $list;
+    }
+    public function roleIndex()
+    {
+        $list =$this->role->paginate(10);
         return $list;
     }
     public function saveAdmin()

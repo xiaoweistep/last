@@ -1,7 +1,6 @@
 <?php
 namespace admin\user\controller;
 use admin\common\controller\Common as admincommon;
-use admin\user\model\Admin as admimModel;
 use admin\user\service\AdminService;
 
 
