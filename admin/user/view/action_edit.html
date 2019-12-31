@@ -23,16 +23,17 @@
                         <label>菜单名称：</label>
                     </div>
                     <div class="field">
-                        <input type="text" class="input w50" value="" name="name" data-validate="required:请输入操作名称" />
+                        <input type="text" class="input w50" value="{$action_detail.name}" name="name" data-validate="required:请输入操作名称" />
                         <div class="tips"></div>
                     </div>
                 </div>
+                <input type="hidden" name="id" value="{$action_detail.id}">
                 <div class="form-group">
                     <div class="label">
                         <label>链接：</label>
                     </div>
                     <div class="field">
-                        <input type="text" class="input w50" value="" name="action_url" data-validate="required:请输入链接" />
+                        <input type="text" class="input w50" value="{$action_detail.action_url}" name="action_url" data-validate="required:请输入链接" />
                         <div class="tips"></div>
                     </div>
                 </div>
@@ -41,7 +42,7 @@
                         <label>所属模块：</label>
                     </div>
                     <div class="field">
-                        <input type="text" class="input w50" value="" name="action_type" data-validate="required:请输入所属模块" />
+                        <input type="text" class="input w50" value="{$action_detail.action_type}" name="action_type" data-validate="required:请输入所属模块" />
                         <div class="tips"></div>
                     </div>
                 </div>
@@ -50,7 +51,10 @@
                         <label>上级菜单：</label>
                     </div>
                     <select name="parent_id" class="input w50">
-                        <option value="0">顶级菜单</option>
+                        <option  value="0" <if condition="$action_detail.parent_id == 0" > selected="selected" </if>  >顶级菜单</option>
+                        <volist name="list" id="first">
+                            <option value="{$first.id}" <if condition="$action_detail.parent_id == $first.id" > selected="selected" </if>>{$first.name}</option>
+                        </volist>
                     </select>
                     <div class="tips"></div>
                 </div>
@@ -71,17 +75,16 @@
 
         function submitForm(){
             $.ajax({
-                url:"<?php echo url('Role/saveAction');?>",
+                url:"<?php echo url('Role/actionUpdate');?>",
                 type:"POST",
                 data:$("form").serialize(),
                 success:function(res){
-
                     if(res.code == 1){
                         layer.alert(res.msg, {title: "提示",btn:'确定'},function () {
                             location.href="{:url('/user/Role/actionIndex')}";
                         });
                     }
-                    console.log(res);
+                    layer.alert(res.msg, {title: "提示",btn:'确定'});
                 }
             });
             return false;

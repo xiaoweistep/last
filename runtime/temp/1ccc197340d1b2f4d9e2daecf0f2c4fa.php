@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:2:{s:58:"E:\phpstudy_pro\WWW\tpframe\admin/user\view\\adminlog.html";i:1577437038;s:57:"E:\phpstudy_pro\WWW\tpframe\admin\common\view\header.html";i:1577678049;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:2:{s:58:"E:\phpstudy_pro\WWW\tpframe\admin/user\view\\adminlog.html";i:1577761848;s:57:"E:\phpstudy_pro\WWW\tpframe\admin\common\view\header.html";i:1577691051;}*/ ?>
 <!DOCTYPE html>
 <html lang="zh-cn">
 <head>
@@ -36,6 +36,8 @@
         <li><a href="<?php echo url('user/Admin/index'); ?>" target="right"><span class="icon-caret-right"></span>管理员列表</a></li>
         <li><a href="<?php echo url('user/Admin/editPass'); ?>" target="right"><span class="icon-caret-right"></span>修改密码</a></li>
         <li><a href="<?php echo url('user/Admin/adminLog'); ?>" target="right"><span class="icon-caret-right"></span>管理员登录日志</a></li>
+        <li><a href="<?php echo url('user/Role/index'); ?>" target="right"><span class="icon-caret-right"></span>管理员角色列表</a></li>
+        <li><a href="<?php echo url('user/Role/actionIndex'); ?>" target="right"><span class="icon-caret-right"></span>角色操作列表</a></li>
     </ul>
     <h2><span class="icon-pencil-square-o"></span>栏目管理</h2>
     <ul>
@@ -98,7 +100,7 @@
                     <th>操作</th>
                     <th width="25%">登录ip</th>
                     <th width="120">操作时间</th>
-                    <th>操作</th>
+                    <th style="display: none">操作</th>
                 </tr>
                 <?php if(is_array($log) || $log instanceof \think\Collection || $log instanceof \think\Paginator): $i = 0; $__LIST__ = $log;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$logs): $mod = ($i % 2 );++$i;?>
                 <tr>
@@ -110,7 +112,7 @@
                     <td><?php echo $logs['ip']; ?></td>
                     <td><?php echo date('Y-m-d H:m:s',$logs['operate_time']); ?></td>
 
-                    <td><div class="button-group"> <a class="button border-red" href="javascript:void(0)" onclick="return del(1)"><span class="icon-trash-o"></span> 删除</a> </div></td>
+                    <td style="display: none"><div class="button-group"> <a class="button border-red" href="javascript:void(0)" onclick="return del(1)"><span class="icon-trash-o"></span> 删除</a> </div></td>
                 </tr>
 
                 <?php endforeach; endif; else: echo "" ;endif; ?>

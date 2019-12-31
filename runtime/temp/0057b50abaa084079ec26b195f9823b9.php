@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:55:"E:\phpstudy_pro\WWW\tpframe\admin/user\view\\login.html";i:1577347121;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:55:"E:\phpstudy_pro\WWW\tpframe\admin/user\view\\login.html";i:1577677369;}*/ ?>
 <!DOCTYPE html>
 <html lang="zh-cn">
 <head>
@@ -64,8 +64,9 @@
             type:"POST",
             data:$("form").serialize(),
             success:function(res){
-                layer.alert(res.msg, {title: "提示",btn:'确定'});
+
                 if(res.code){
+                    layer.alert(res.msg, {title: "提示",btn:'确定'});
                     location.href="<?php echo url('/index/Index/index'); ?>";
                 }else {
                     layer.alert(res.msg, {title: "提示",btn:'确定'});

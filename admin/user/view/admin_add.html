@@ -69,10 +69,10 @@
                         <label>身份类型：</label>
                     </div>
                         <select name="user_type" class="input w50">
-                            <option value="1">请选择身份类型</option>
-                            <option value="1">初级管理员</option>
-                            <option value="2">中级管理员</option>
-                            <option value="0">最高管理员</option>
+
+                            <volist name="role" id="roles">
+                                <option value="{$roles.id}">{$roles.name}</option>
+                            </volist>
                         </select>
                         <div class="tips"></div>
                 </div>
@@ -83,7 +83,7 @@
                     <select name="user_status" class="input w50">
                         <option value="0">请选择状态</option>
                         <option value="0">正常</option>
-                        <option value="0">禁用</option>
+                        <option value="1">禁用</option>
                     </select>
                     <div class="tips"></div>
                 </div>

@@ -3,6 +3,7 @@ namespace admin\user\service;
 use admin\user\model\Admin;
 use admin\user\model\Adminlog;
 use admin\user\model\Role;
+use admin\user\model\RoleAction;
 use admin\common\controller\Common;
 use think\Request;
 
@@ -11,7 +12,8 @@ class AdminService extends Common
     public function __construct(Request $request=null)
     {
         $this->admin = new Admin();
-        $this->role = new role();
+        $this->role = new Role();
+        $this->RoleAction = new RoleAction();
         parent::__construct();
     }
     public function adminIndex()
@@ -23,6 +25,93 @@ class AdminService extends Common
     {
         $list =$this->role->paginate(10);
         return $list;
+    }
+    public function actionIndex()
+    {
+        $list =$this->RoleAction->select();
+        return $list;
+    }
+    public function actionDetail()
+    {
+        $list =$this->RoleAction->find($this->request->param('id'));
+        return $list;
+    }
+    /*
+     * 获取顶级导航
+     */
+    public function actionFirst()
+    {
+        $list =$this->RoleAction->where('parent_id',0)->select();
+        return $list;
+    }
+    /*
+     * 获取导航编辑
+     */
+    public function actionUpdate()
+    {
+        $data =$this->admin->filterData('tp_role_action',$this->request->param());
+        if(!$data['id']) return $this->errorReturn('参数错误');
+        $res = $this->RoleAction->save($data,['id' => $data['id']]);
+        if($res){
+            return $this->successReturn('更新成功');
+        }else{
+            return $this->errorReturn('参数错误');
+        }
+    }
+    public function actionDeal()
+    {
+        if(!$this->request->param('id')) return $this->errorReturn('参数错误');
+        $time = time();
+        $res = $this->RloeAction->save(['delete_time'=>$time],function($query){
+            // 更新status值为1 并且id大于10的数据
+            $query->where('id', 'in', $this->request->param('id'));
+        });
+        if($res){
+            return $this->successReturn('删除成功');
+        }else{
+            return $this->errorReturn('删除失败');
+        }
+    }
+    public function deleteAdmin()
+    {
+        if(!$this->request->param('id')) return $this->errorReturn('参数错误');
+        $time = time();
+        $res = $this->admin->save(['delete_time'=>$time],function($query){
+            // 更新status值为1 并且id大于10的数据
+            $query->where('id', 'in', $this->request->param('id'));
+        });
+        if($res){
+            return $this->successReturn('删除成功');
+        }else{
+            return $this->errorReturn('删除失败');
+        }
+    }
+    public function deleteRole()
+    {
+        if(!$this->request->param('id')) return $this->errorReturn('参数错误');
+        $time = time();
+        $res = $this->role->save(['delete_time'=>$time],function($query){
+            // 更新status值为1 并且id大于10的数据
+            $query->where('id', 'in', $this->request->param('id'));
+        });
+        if($res){
+            return $this->successReturn('删除成功');
+        }else{
+            return $this->errorReturn('删除失败');
+        }
+    }
+
+    public function saveAction()
+    {
+        $data =$this->admin->filterData('tp_role_action',$this->request->param());
+        if (!$data['name']) return $this->errorReturn('菜单名称必填');
+        if (!$data['action_type']) return $this->errorReturn('菜单所属模块必填');
+        $res = $this->RoleAction->save($data);
+        if($res){
+            return $this->successReturn('添加成功');
+        }else{
+            return $this->errorReturn('添加失败');
+        }
     }
     public function saveAdmin()
     {

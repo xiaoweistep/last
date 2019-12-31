@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:2:{s:55:"E:\phpstudy_pro\WWW\tpframe/admin/user\view\\admin.html";i:1577669032;s:57:"E:\phpstudy_pro\WWW\tpframe\admin\common\view\header.html";i:1577691051;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:2:{s:61:"E:\phpstudy_pro\WWW\tpframe/admin/user\view\\action_role.html";i:1577698505;s:57:"E:\phpstudy_pro\WWW\tpframe\admin\common\view\header.html";i:1577691051;}*/ ?>
 <!DOCTYPE html>
 <html lang="zh-cn">
 <head>
@@ -83,13 +83,13 @@
     <body>
     <form method="post" action="">
         <div class="panel admin-panel">
-            <div class="panel-head"><strong class="icon-reorder"> 管理员列表</strong></div>
+            <div class="panel-head"><strong class="icon-reorder"> 导航列表</strong></div>
             <div class="padding border-bottom">
                 <ul class="search">
                     <li>
                         <button type="button"  class="button border-green" id="checkall"><span class="icon-check"></span> 全选</button>
                         <button type="submit" class="button border-red"><span class="icon-trash-o"></span> 批量删除</button>
-                        <button onclick="window.location.href='<?php echo url('user/Admin/add'); ?>'" type="button"  class="button border-green"><span class="icon-plus-square-o" ></span> 添加管理员</button>
+                        <button onclick="window.location.href='<?php echo url('user/Role/actionAdd'); ?>'" type="button"  class="button border-green"><span class="icon-plus-square-o" ></span> 添加操作</button>
                     </li>
                 </ul>
 
@@ -98,31 +98,37 @@
 
             <table class="table table-hover text-center">
                 <tr>
-                    <th width="120">管理员ID</th>
-                    <th>管理员名称</th>
-                    <th>手机</th>
-                    <th>邮件</th>
-                    <th>身份类型</th>
-                    <th>状态</th>
-                    <th width="120">创建时间</th>
+                    <th width="120">ID</th>
+                    <th>导航名称</th>
+                    <th>导航地址</th>
+                    <th>导航类型</th>
+
                     <th>操作</th>
                 </tr>
-                <?php if(is_array($admin) || $admin instanceof \think\Collection || $admin instanceof \think\Paginator): $i = 0; $__LIST__ = $admin;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$admins): $mod = ($i % 2 );++$i;?>
-                <tr>
-                    <td><input type="checkbox" name="id[]" value="1" />
-                        <?php echo $admins['id']; ?></td>
-                    <td> <?php echo $admins['user_login']; ?></td>
-
-                    <td><?php echo $admins['mobile']; ?></td>
-                    <td><?php echo $admins['user_email']; ?></td>
-                    <td><?php echo $admins['user_type']; ?></td>
-                    <td><?php echo $admins['user_status']; ?></td>
-                    <td><?php echo $admins['create_time']; ?></td>
-
-                    <td><div class="button-group"> <a class="button border-red" href="javascript:void(0)" onclick="return del(1)"><span class="icon-trash-o"></span> 删除</a> </div></td>
-                </tr>
-
-                <?php endforeach; endif; else: echo "" ;endif; ?>
+                <?php if(is_array($role_action) || $role_action instanceof \think\Collection || $role_action instanceof \think\Paginator): $i = 0; $__LIST__ = $role_action;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$actions): $mod = ($i % 2 );++$i;if($actions['parent_id'] == 0): ?>
+                        <tr>
+                            <td><input type="checkbox" name="id[]" value="1" />
+                                <?php echo $actions['id']; ?></td>
+                            <td> <?php echo $actions['name']; ?></td>
+                            <td><?php echo $actions['action_url']; ?></td>
+                            <td><?php echo $actions['action_type']; ?></td>
+                            <td>
+                                <a class="button border-main" href="<?php echo url('user/Role/actionEdit',['id'=>$actions['id']]); ?>"><span class="icon-edit"></span> 修改</a>
+                                <div class="button-group"> <a class="button border-red" href="javascript:void(0)" onclick="return del(1)"><span class="icon-trash-o"></span> 删除</a> </div></td>
+                        </tr>
+                        <?php if(is_array($role_action) || $role_action instanceof \think\Collection || $role_action instanceof \think\Paginator): $i = 0; $__LIST__ = $role_action;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$actionss): $mod = ($i % 2 );++$i;if($actionss['parent_id'] == $actions['id']): ?>
+                                <tr >
+                                    <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                        <input type="checkbox" name="id[]" value="1" />
+                                        <?php echo $actionss['id']; ?></td>
+                                    <td> <?php echo $actionss['name']; ?></td>
+                                    <td><?php echo $actionss['action_url']; ?></td>
+                                    <td><?php echo $actionss['action_type']; ?></td>
+                                    <td>
+                                        <a class="button border-main" href="<?php echo url('user/Role/actionEdit',['id'=>$actionss['id']]); ?>"><span class="icon-edit"></span> 修改</a>
+                                        <div class="button-group"> <a class="button border-red" href="javascript:void(0)" onclick="return del(1)"><span class="icon-trash-o"></span> 删除</a> </div></td>
+                                </tr>
+                            <?php endif; endforeach; endif; else: echo "" ;endif; endif; endforeach; endif; else: echo "" ;endif; ?>
                 <style>
 
                     .pagination .active span{
@@ -134,16 +140,7 @@
 
                     .pagination li{ margin: 0 3px}
                 </style>
-                <tr>
-                    <td colspan="8">
-<!--                        <div class="pagelist">-->
-<!--                            <a href="">上一页</a> <span class="current">1</span>-->
-<!--                            <a href="">2</a><a href="">3</a><a href="">下一页</a>-->
-<!--                            <a href="">尾页</a>-->
-<!--                        </div>-->
-                        <?php echo $admin->render(); ?>
-                    </td>
-                </tr>
+
             </table>
         </div>
     </form>

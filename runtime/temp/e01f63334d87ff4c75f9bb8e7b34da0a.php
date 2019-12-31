@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:2:{s:55:"E:\phpstudy_pro\WWW\tpframe/admin/user\view\\admin.html";i:1577669032;s:57:"E:\phpstudy_pro\WWW\tpframe\admin\common\view\header.html";i:1577691051;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:2:{s:58:"E:\phpstudy_pro\WWW\tpframe\admin/user\view\\role_add.html";i:1577773634;s:57:"E:\phpstudy_pro\WWW\tpframe\admin\common\view\header.html";i:1577691051;}*/ ?>
 <!DOCTYPE html>
 <html lang="zh-cn">
 <head>
@@ -81,110 +81,74 @@
         <script src="/../public/static/admin/js/pintuer.js"></script>
     </head>
     <body>
-    <form method="post" action="">
-        <div class="panel admin-panel">
-            <div class="panel-head"><strong class="icon-reorder"> 管理员列表</strong></div>
-            <div class="padding border-bottom">
-                <ul class="search">
-                    <li>
-                        <button type="button"  class="button border-green" id="checkall"><span class="icon-check"></span> 全选</button>
-                        <button type="submit" class="button border-red"><span class="icon-trash-o"></span> 批量删除</button>
-                        <button onclick="window.location.href='<?php echo url('user/Admin/add'); ?>'" type="button"  class="button border-green"><span class="icon-plus-square-o" ></span> 添加管理员</button>
-                    </li>
-                </ul>
+    <div class="panel admin-panel">
+        <div class="panel-head" id="add"><strong><span class="icon-pencil-square-o"></span>管理员增加</strong></div>
+        <div class="body-content">
+            <form method="post" class="form-x" action="<?php echo url('user/Admin/save'); ?>" onsubmit="return submitForm();">
+                <div class="form-group">
+                    <div class="label">
+                        <label>角色名称：</label>
+                    </div>
+                    <div class="field">
+                        <input type="text" class="input w50" value="" name="user_login" data-validate="required:请输入角色名称" />
+                        <div class="tips"></div>
+                    </div>
+                </div>
 
-            </div>
 
+                <div class="form-group">
+                    <div class="label">
+                        <label>备注：</label>
+                    </div>
+                    <div class="field">
+                        <textarea name="remark" class="input" style="height:90px;"></textarea>
+                        <div class="tips"></div>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="label">
+                        <label>权限菜单列表：</label>
+                    </div>
+                </div>
+                <?php if(is_array($actionList) || $actionList instanceof \think\Collection || $actionList instanceof \think\Paginator): $i = 0; $__LIST__ = $actionList;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$role): $mod = ($i % 2 );++$i;if($role['parent_id'] == 0): ?>
+                    <div class="form-group">
+                        <div class="label">
+                            <label><?php echo $role['name']; ?><input name="action_list[]" type="checkbox">:</label>
+                        </div>
+                        <div class="field" style="padding-top:8px;">
 
-            <table class="table table-hover text-center">
-                <tr>
-                    <th width="120">管理员ID</th>
-                    <th>管理员名称</th>
-                    <th>手机</th>
-                    <th>邮件</th>
-                    <th>身份类型</th>
-                    <th>状态</th>
-                    <th width="120">创建时间</th>
-                    <th>操作</th>
-                </tr>
-                <?php if(is_array($admin) || $admin instanceof \think\Collection || $admin instanceof \think\Paginator): $i = 0; $__LIST__ = $admin;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$admins): $mod = ($i % 2 );++$i;?>
-                <tr>
-                    <td><input type="checkbox" name="id[]" value="1" />
-                        <?php echo $admins['id']; ?></td>
-                    <td> <?php echo $admins['user_login']; ?></td>
+                            <?php if(is_array($actionList) || $actionList instanceof \think\Collection || $actionList instanceof \think\Paginator): $i = 0; $__LIST__ = $actionList;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$roles): $mod = ($i % 2 );++$i;if($roles['parent_id'] == $role['id']): ?>
+                            <?php echo $roles['name']; ?> <input name="action_list[]" type="checkbox">
+                                <?php endif; endforeach; endif; else: echo "" ;endif; ?>
 
-                    <td><?php echo $admins['mobile']; ?></td>
-                    <td><?php echo $admins['user_email']; ?></td>
-                    <td><?php echo $admins['user_type']; ?></td>
-                    <td><?php echo $admins['user_status']; ?></td>
-                    <td><?php echo $admins['create_time']; ?></td>
+                        </div>
+                    </div>
+                    <?php endif; endforeach; endif; else: echo "" ;endif; ?>
 
-                    <td><div class="button-group"> <a class="button border-red" href="javascript:void(0)" onclick="return del(1)"><span class="icon-trash-o"></span> 删除</a> </div></td>
-                </tr>
-
-                <?php endforeach; endif; else: echo "" ;endif; ?>
-                <style>
-
-                    .pagination .active span{
-                        background:#09F; color:#FFF; border-color:#09F;
-                        border-radius: 3px;
-                        display: inline-block;
-                        padding: 9px 12px;
-                    }
-
-                    .pagination li{ margin: 0 3px}
-                </style>
-                <tr>
-                    <td colspan="8">
-<!--                        <div class="pagelist">-->
-<!--                            <a href="">上一页</a> <span class="current">1</span>-->
-<!--                            <a href="">2</a><a href="">3</a><a href="">下一页</a>-->
-<!--                            <a href="">尾页</a>-->
-<!--                        </div>-->
-                        <?php echo $admin->render(); ?>
-                    </td>
-                </tr>
-            </table>
+            </form>
         </div>
-    </form>
-    <script type="text/javascript">
-
-        function del(id){
-            if(confirm("您确定要删除吗?")){
-
-            }
-        }
-
-        $("#checkall").click(function(){
-            $("input[name='id[]']").each(function(){
-                if (this.checked) {
-                    this.checked = false;
-                }
-                else {
-                    this.checked = true;
-                }
-            });
-        })
-
-        function DelSelect(){
-            var Checkbox=false;
-            $("input[name='id[]']").each(function(){
-                if (this.checked==true) {
-                    Checkbox=true;
-                }
-            });
-            if (Checkbox){
-                var t=confirm("您确认要删除选中的内容吗？");
-                if (t==false) return false;
-            }
-            else{
-                alert("请选择您要删除的内容!");
-                return false;
-            }
-        }
-
-    </script>
+    </div>
     </body></html>
+    <script>
+
+        function submitForm(){
+            $.ajax({
+                url:"<?php echo url('Admin/save');?>",
+                type:"POST",
+                data:$("form").serialize(),
+                success:function(res){
+
+                    if(res.code == 1){
+                        layer.alert(res.msg, {title: "提示",btn:'确定'},function () {
+                            location.href="<?php echo url('/user/Admin/index'); ?>";
+                        });
+                    }
+                    console.log(res);
+                }
+            });
+            return false;
+        }
+    </script>
 </div>
 </body>
 </html>

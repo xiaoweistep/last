@@ -18,14 +18,16 @@ class Admin extends admincommon
     {
         $list = (new AdminService())->adminIndex();
         $this->assign('admin',$list);
-        return $this->fetch(":admin");
+        return $this->fetch(":admin_index");
     }
     /**
      * @return mixed 管理员增加
      */
     public function add()
     {
-        return $this->fetch(":add");
+        $rolelist = (new AdminService())->roleIndex();
+        $this->assign('role',$rolelist);
+        return $this->fetch(":admin_add");
     }
     /**
      * @return mixed 管理员增加
@@ -57,6 +59,14 @@ class Admin extends admincommon
             return $this->errorReturn('原密码错误');
         }
         return (new AdminService())->updateOld($input['newpass']);
+
+    }
+    /**
+     * @return mixed 删除会员
+     */
+    public function deleteAdmin()
+    {
+       return (new AdminService())->deleteAdmin();;
 
     }
     /**

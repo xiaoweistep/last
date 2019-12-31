@@ -1,0 +1,3092 @@
+---------------------------------------------------------------
+[ 2019-12-24T15:49:55+08:00 ] 127.0.0.1 GET tp.test/admin/
+[运行时间：0.481027s] [吞吐率：2.08req/s] [内存消耗：2,625.01kb] [文件加载：51]
+[ info ] [ LANG ] E:\phpstudy_pro\WWW\tpframe\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'ADMIN=%7B%22id%22%3A1%2C%22user_login%22%3A%22admin%22%2C%22user_status%22%3A%220%22%2C%22user_type%22%3A0%2C%22mobile%22%3A%2218814126846%22%2C%22user_email%22%3A%2240363946%40qq.com%22%2C%22last_login_time%22%3A1544061818%2C%22last_login_ip%22%3A%22127.0.0.1%22%2C%22create_time%22%3A%221970-01-01+08%3A00%3A00%22%7D',
+  'accept-language' => 'zh-CN,zh;q=0.9,ja;q=0.8,en;q=0.7',
+  'accept-encoding' => 'gzip, deflate',
+  'purpose' => 'prefetch',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.169 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'tp.test',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] admin\index\controller\Index->index[ E:\phpstudy_pro\WWW\tpframe\admin\index\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] E:\phpstudy_pro\WWW\tpframe\admin/index\view\\index.html [ array (
+  0 => 'show',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.020001s ] mysql:host=127.0.0.1;dbname=tpbase;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_baseset` [ RunTime:0.023001s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_baseset` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[ 2019-12-24T15:49:56+08:00 ] 127.0.0.1 GET tp.test/admin/
+[运行时间：0.056003s] [吞吐率：17.86req/s] [内存消耗：2,624.52kb] [文件加载：51]
+[ info ] [ LANG ] E:\phpstudy_pro\WWW\tpframe\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'ADMIN=%7B%22id%22%3A1%2C%22user_login%22%3A%22admin%22%2C%22user_status%22%3A%220%22%2C%22user_type%22%3A0%2C%22mobile%22%3A%2218814126846%22%2C%22user_email%22%3A%2240363946%40qq.com%22%2C%22last_login_time%22%3A1544061818%2C%22last_login_ip%22%3A%22127.0.0.1%22%2C%22create_time%22%3A%221970-01-01+08%3A00%3A00%22%7D; PHPSESSID=can1l1nugjhpmmd7jbsnjvle42',
+  'accept-language' => 'zh-CN,zh;q=0.9,ja;q=0.8,en;q=0.7',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.169 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'tp.test',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] admin\index\controller\Index->index[ E:\phpstudy_pro\WWW\tpframe\admin\index\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] E:\phpstudy_pro\WWW\tpframe\admin/index\view\\index.html [ array (
+  0 => 'show',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002000s ] mysql:host=127.0.0.1;dbname=tpbase;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_baseset` [ RunTime:0.002000s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_baseset` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[ 2019-12-24T15:50:00+08:00 ] 127.0.0.1 GET tp.test/admin/adv.html
+[运行时间：0.043003s] [吞吐率：23.25req/s] [内存消耗：1,276.54kb] [文件加载：34]
+[ info ] [ LANG ] E:\phpstudy_pro\WWW\tpframe\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'adv',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'ADMIN=%7B%22id%22%3A1%2C%22user_login%22%3A%22admin%22%2C%22user_status%22%3A%220%22%2C%22user_type%22%3A0%2C%22mobile%22%3A%2218814126846%22%2C%22user_email%22%3A%2240363946%40qq.com%22%2C%22last_login_time%22%3A1544061818%2C%22last_login_ip%22%3A%22127.0.0.1%22%2C%22create_time%22%3A%221970-01-01+08%3A00%3A00%22%7D; PHPSESSID=can1l1nugjhpmmd7jbsnjvle42',
+  'accept-language' => 'zh-CN,zh;q=0.9,ja;q=0.8,en;q=0.7',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://tp.test/admin/',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.169 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'tp.test',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-12-24T15:50:03+08:00 ] 127.0.0.1 GET tp.test/admin/index/index/index
+[运行时间：0.058003s] [吞吐率：17.24req/s] [内存消耗：2,628.03kb] [文件加载：51]
+[ info ] [ LANG ] E:\phpstudy_pro\WWW\tpframe\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'ADMIN=%7B%22id%22%3A1%2C%22user_login%22%3A%22admin%22%2C%22user_status%22%3A%220%22%2C%22user_type%22%3A0%2C%22mobile%22%3A%2218814126846%22%2C%22user_email%22%3A%2240363946%40qq.com%22%2C%22last_login_time%22%3A1544061818%2C%22last_login_ip%22%3A%22127.0.0.1%22%2C%22create_time%22%3A%221970-01-01+08%3A00%3A00%22%7D; PHPSESSID=can1l1nugjhpmmd7jbsnjvle42',
+  'accept-language' => 'zh-CN,zh;q=0.9,ja;q=0.8,en;q=0.7',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://tp.test/admin/',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.169 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'tp.test',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] admin\index\controller\Index->index[ E:\phpstudy_pro\WWW\tpframe\admin\index\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] E:\phpstudy_pro\WWW\tpframe\admin/index\view\\index.html [ array (
+  0 => 'show',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:host=127.0.0.1;dbname=tpbase;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_baseset` [ RunTime:0.002001s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_baseset` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[ 2019-12-24T15:50:05+08:00 ] 127.0.0.1 GET tp.test/admin/user/admin/editpass
+[运行时间：0.050002s] [吞吐率：20.00req/s] [内存消耗：1,605.41kb] [文件加载：41]
+[ info ] [ LANG ] E:\phpstudy_pro\WWW\tpframe\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'user',
+    1 => 'admin',
+    2 => 'editpass',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'ADMIN=%7B%22id%22%3A1%2C%22user_login%22%3A%22admin%22%2C%22user_status%22%3A%220%22%2C%22user_type%22%3A0%2C%22mobile%22%3A%2218814126846%22%2C%22user_email%22%3A%2240363946%40qq.com%22%2C%22last_login_time%22%3A1544061818%2C%22last_login_ip%22%3A%22127.0.0.1%22%2C%22create_time%22%3A%221970-01-01+08%3A00%3A00%22%7D; PHPSESSID=can1l1nugjhpmmd7jbsnjvle42',
+  'accept-language' => 'zh-CN,zh;q=0.9,ja;q=0.8,en;q=0.7',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://tp.test/admin/index/index/index',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.169 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'tp.test',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] admin\user\controller\Admin->editPass[ E:\phpstudy_pro\WWW\tpframe\admin\user\controller\Admin.php ]
+[ info ] [ VIEW ] E:\phpstudy_pro\WWW\tpframe\admin/user\view\\editpass.html [ array (
+  0 => 'admin',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-12-24T15:50:06+08:00 ] 127.0.0.1 GET tp.test/admin/user/admin/adminlog
+[运行时间：0.126008s] [吞吐率：7.94req/s] [内存消耗：2,760.29kb] [文件加载：52]
+[ info ] [ LANG ] E:\phpstudy_pro\WWW\tpframe\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'user',
+    1 => 'admin',
+    2 => 'adminlog',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'ADMIN=%7B%22id%22%3A1%2C%22user_login%22%3A%22admin%22%2C%22user_status%22%3A%220%22%2C%22user_type%22%3A0%2C%22mobile%22%3A%2218814126846%22%2C%22user_email%22%3A%2240363946%40qq.com%22%2C%22last_login_time%22%3A1544061818%2C%22last_login_ip%22%3A%22127.0.0.1%22%2C%22create_time%22%3A%221970-01-01+08%3A00%3A00%22%7D; PHPSESSID=can1l1nugjhpmmd7jbsnjvle42',
+  'accept-language' => 'zh-CN,zh;q=0.9,ja;q=0.8,en;q=0.7',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://tp.test/admin/user/admin/editpass',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.169 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'tp.test',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] admin\user\controller\Admin->adminLog[ E:\phpstudy_pro\WWW\tpframe\admin\user\controller\Admin.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] E:\phpstudy_pro\WWW\tpframe\admin/user\view\\adminlog.html [ array (
+  0 => 'log',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:host=127.0.0.1;dbname=tpbase;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_adminlog` [ RunTime:0.032002s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_adminlog` [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2019-12-24T15:50:08+08:00 ] 127.0.0.1 GET tp.test/admin/user/admin/adminlog
+[运行时间：0.051003s] [吞吐率：19.61req/s] [内存消耗：2,616.94kb] [文件加载：50]
+[ info ] [ LANG ] E:\phpstudy_pro\WWW\tpframe\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'user',
+    1 => 'admin',
+    2 => 'adminlog',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'ADMIN=%7B%22id%22%3A1%2C%22user_login%22%3A%22admin%22%2C%22user_status%22%3A%220%22%2C%22user_type%22%3A0%2C%22mobile%22%3A%2218814126846%22%2C%22user_email%22%3A%2240363946%40qq.com%22%2C%22last_login_time%22%3A1544061818%2C%22last_login_ip%22%3A%22127.0.0.1%22%2C%22create_time%22%3A%221970-01-01+08%3A00%3A00%22%7D; PHPSESSID=can1l1nugjhpmmd7jbsnjvle42',
+  'accept-language' => 'zh-CN,zh;q=0.9,ja;q=0.8,en;q=0.7',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://tp.test/admin/user/admin/adminlog',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.169 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'tp.test',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] admin\user\controller\Admin->adminLog[ E:\phpstudy_pro\WWW\tpframe\admin\user\controller\Admin.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] E:\phpstudy_pro\WWW\tpframe\admin/user\view\\adminlog.html [ array (
+  0 => 'log',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002000s ] mysql:host=127.0.0.1;dbname=tpbase;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_adminlog` [ RunTime:0.003000s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_adminlog` [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[ 2019-12-24T15:50:09+08:00 ] 127.0.0.1 GET tp.test/admin/user/admin/adminlog
+[运行时间：0.065003s] [吞吐率：15.38req/s] [内存消耗：2,616.94kb] [文件加载：50]
+[ info ] [ LANG ] E:\phpstudy_pro\WWW\tpframe\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'user',
+    1 => 'admin',
+    2 => 'adminlog',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'ADMIN=%7B%22id%22%3A1%2C%22user_login%22%3A%22admin%22%2C%22user_status%22%3A%220%22%2C%22user_type%22%3A0%2C%22mobile%22%3A%2218814126846%22%2C%22user_email%22%3A%2240363946%40qq.com%22%2C%22last_login_time%22%3A1544061818%2C%22last_login_ip%22%3A%22127.0.0.1%22%2C%22create_time%22%3A%221970-01-01+08%3A00%3A00%22%7D; PHPSESSID=can1l1nugjhpmmd7jbsnjvle42',
+  'accept-language' => 'zh-CN,zh;q=0.9,ja;q=0.8,en;q=0.7',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://tp.test/admin/user/admin/adminlog',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.169 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'tp.test',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] admin\user\controller\Admin->adminLog[ E:\phpstudy_pro\WWW\tpframe\admin\user\controller\Admin.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] E:\phpstudy_pro\WWW\tpframe\admin/user\view\\adminlog.html [ array (
+  0 => 'log',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:host=127.0.0.1;dbname=tpbase;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_adminlog` [ RunTime:0.003000s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_adminlog` [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2019-12-24T15:50:10+08:00 ] 127.0.0.1 GET tp.test/admin/user/admin/adminlog
+[运行时间：0.052003s] [吞吐率：19.23req/s] [内存消耗：2,616.94kb] [文件加载：50]
+[ info ] [ LANG ] E:\phpstudy_pro\WWW\tpframe\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'user',
+    1 => 'admin',
+    2 => 'adminlog',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'ADMIN=%7B%22id%22%3A1%2C%22user_login%22%3A%22admin%22%2C%22user_status%22%3A%220%22%2C%22user_type%22%3A0%2C%22mobile%22%3A%2218814126846%22%2C%22user_email%22%3A%2240363946%40qq.com%22%2C%22last_login_time%22%3A1544061818%2C%22last_login_ip%22%3A%22127.0.0.1%22%2C%22create_time%22%3A%221970-01-01+08%3A00%3A00%22%7D; PHPSESSID=can1l1nugjhpmmd7jbsnjvle42',
+  'accept-language' => 'zh-CN,zh;q=0.9,ja;q=0.8,en;q=0.7',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://tp.test/admin/user/admin/adminlog',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.169 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'tp.test',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] admin\user\controller\Admin->adminLog[ E:\phpstudy_pro\WWW\tpframe\admin\user\controller\Admin.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] E:\phpstudy_pro\WWW\tpframe\admin/user\view\\adminlog.html [ array (
+  0 => 'log',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:host=127.0.0.1;dbname=tpbase;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_adminlog` [ RunTime:0.004001s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_adminlog` [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[ 2019-12-24T15:50:10+08:00 ] 127.0.0.1 GET tp.test/admin/user/admin/adminlog
+[运行时间：0.052003s] [吞吐率：19.23req/s] [内存消耗：2,616.94kb] [文件加载：50]
+[ info ] [ LANG ] E:\phpstudy_pro\WWW\tpframe\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'user',
+    1 => 'admin',
+    2 => 'adminlog',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'ADMIN=%7B%22id%22%3A1%2C%22user_login%22%3A%22admin%22%2C%22user_status%22%3A%220%22%2C%22user_type%22%3A0%2C%22mobile%22%3A%2218814126846%22%2C%22user_email%22%3A%2240363946%40qq.com%22%2C%22last_login_time%22%3A1544061818%2C%22last_login_ip%22%3A%22127.0.0.1%22%2C%22create_time%22%3A%221970-01-01+08%3A00%3A00%22%7D; PHPSESSID=can1l1nugjhpmmd7jbsnjvle42',
+  'accept-language' => 'zh-CN,zh;q=0.9,ja;q=0.8,en;q=0.7',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://tp.test/admin/user/admin/adminlog',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.169 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'tp.test',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] admin\user\controller\Admin->adminLog[ E:\phpstudy_pro\WWW\tpframe\admin\user\controller\Admin.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] E:\phpstudy_pro\WWW\tpframe\admin/user\view\\adminlog.html [ array (
+  0 => 'log',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002000s ] mysql:host=127.0.0.1;dbname=tpbase;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_adminlog` [ RunTime:0.003000s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_adminlog` [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[ 2019-12-24T15:50:10+08:00 ] 127.0.0.1 GET tp.test/admin/user/admin/adminlog
+[运行时间：0.056003s] [吞吐率：17.86req/s] [内存消耗：2,616.94kb] [文件加载：50]
+[ info ] [ LANG ] E:\phpstudy_pro\WWW\tpframe\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'user',
+    1 => 'admin',
+    2 => 'adminlog',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'ADMIN=%7B%22id%22%3A1%2C%22user_login%22%3A%22admin%22%2C%22user_status%22%3A%220%22%2C%22user_type%22%3A0%2C%22mobile%22%3A%2218814126846%22%2C%22user_email%22%3A%2240363946%40qq.com%22%2C%22last_login_time%22%3A1544061818%2C%22last_login_ip%22%3A%22127.0.0.1%22%2C%22create_time%22%3A%221970-01-01+08%3A00%3A00%22%7D; PHPSESSID=can1l1nugjhpmmd7jbsnjvle42',
+  'accept-language' => 'zh-CN,zh;q=0.9,ja;q=0.8,en;q=0.7',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://tp.test/admin/user/admin/adminlog',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.169 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'tp.test',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] admin\user\controller\Admin->adminLog[ E:\phpstudy_pro\WWW\tpframe\admin\user\controller\Admin.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] E:\phpstudy_pro\WWW\tpframe\admin/user\view\\adminlog.html [ array (
+  0 => 'log',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:host=127.0.0.1;dbname=tpbase;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_adminlog` [ RunTime:0.003000s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_adminlog` [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[ 2019-12-24T15:50:11+08:00 ] 127.0.0.1 GET tp.test/admin/user/admin/adminlog
+[运行时间：0.054003s] [吞吐率：18.52req/s] [内存消耗：2,616.94kb] [文件加载：50]
+[ info ] [ LANG ] E:\phpstudy_pro\WWW\tpframe\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'user',
+    1 => 'admin',
+    2 => 'adminlog',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'ADMIN=%7B%22id%22%3A1%2C%22user_login%22%3A%22admin%22%2C%22user_status%22%3A%220%22%2C%22user_type%22%3A0%2C%22mobile%22%3A%2218814126846%22%2C%22user_email%22%3A%2240363946%40qq.com%22%2C%22last_login_time%22%3A1544061818%2C%22last_login_ip%22%3A%22127.0.0.1%22%2C%22create_time%22%3A%221970-01-01+08%3A00%3A00%22%7D; PHPSESSID=can1l1nugjhpmmd7jbsnjvle42',
+  'accept-language' => 'zh-CN,zh;q=0.9,ja;q=0.8,en;q=0.7',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://tp.test/admin/user/admin/adminlog',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.169 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'tp.test',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] admin\user\controller\Admin->adminLog[ E:\phpstudy_pro\WWW\tpframe\admin\user\controller\Admin.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] E:\phpstudy_pro\WWW\tpframe\admin/user\view\\adminlog.html [ array (
+  0 => 'log',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002000s ] mysql:host=127.0.0.1;dbname=tpbase;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_adminlog` [ RunTime:0.003000s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_adminlog` [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[ 2019-12-24T15:50:12+08:00 ] 127.0.0.1 GET tp.test/admin/user/admin/adminlog
+[运行时间：0.055004s] [吞吐率：18.18req/s] [内存消耗：2,616.94kb] [文件加载：50]
+[ info ] [ LANG ] E:\phpstudy_pro\WWW\tpframe\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'user',
+    1 => 'admin',
+    2 => 'adminlog',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'ADMIN=%7B%22id%22%3A1%2C%22user_login%22%3A%22admin%22%2C%22user_status%22%3A%220%22%2C%22user_type%22%3A0%2C%22mobile%22%3A%2218814126846%22%2C%22user_email%22%3A%2240363946%40qq.com%22%2C%22last_login_time%22%3A1544061818%2C%22last_login_ip%22%3A%22127.0.0.1%22%2C%22create_time%22%3A%221970-01-01+08%3A00%3A00%22%7D; PHPSESSID=can1l1nugjhpmmd7jbsnjvle42',
+  'accept-language' => 'zh-CN,zh;q=0.9,ja;q=0.8,en;q=0.7',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://tp.test/admin/user/admin/adminlog',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.169 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'tp.test',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] admin\user\controller\Admin->adminLog[ E:\phpstudy_pro\WWW\tpframe\admin\user\controller\Admin.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] E:\phpstudy_pro\WWW\tpframe\admin/user\view\\adminlog.html [ array (
+  0 => 'log',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002000s ] mysql:host=127.0.0.1;dbname=tpbase;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_adminlog` [ RunTime:0.004000s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_adminlog` [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[ 2019-12-24T15:50:12+08:00 ] 127.0.0.1 GET tp.test/admin/user/admin/adminlog
+[运行时间：0.065004s] [吞吐率：15.38req/s] [内存消耗：2,616.94kb] [文件加载：50]
+[ info ] [ LANG ] E:\phpstudy_pro\WWW\tpframe\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'user',
+    1 => 'admin',
+    2 => 'adminlog',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'ADMIN=%7B%22id%22%3A1%2C%22user_login%22%3A%22admin%22%2C%22user_status%22%3A%220%22%2C%22user_type%22%3A0%2C%22mobile%22%3A%2218814126846%22%2C%22user_email%22%3A%2240363946%40qq.com%22%2C%22last_login_time%22%3A1544061818%2C%22last_login_ip%22%3A%22127.0.0.1%22%2C%22create_time%22%3A%221970-01-01+08%3A00%3A00%22%7D; PHPSESSID=can1l1nugjhpmmd7jbsnjvle42',
+  'accept-language' => 'zh-CN,zh;q=0.9,ja;q=0.8,en;q=0.7',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://tp.test/admin/user/admin/adminlog',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.169 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'tp.test',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] admin\user\controller\Admin->adminLog[ E:\phpstudy_pro\WWW\tpframe\admin\user\controller\Admin.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] E:\phpstudy_pro\WWW\tpframe\admin/user\view\\adminlog.html [ array (
+  0 => 'log',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002001s ] mysql:host=127.0.0.1;dbname=tpbase;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_adminlog` [ RunTime:0.003000s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_adminlog` [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[ 2019-12-24T16:02:03+08:00 ] 127.0.0.1 GET tp.test/admin/
+[运行时间：0.061003s] [吞吐率：16.39req/s] [内存消耗：2,624.52kb] [文件加载：51]
+[ info ] [ LANG ] E:\phpstudy_pro\WWW\tpframe\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'ADMIN=%7B%22id%22%3A1%2C%22user_login%22%3A%22admin%22%2C%22user_status%22%3A%220%22%2C%22user_type%22%3A0%2C%22mobile%22%3A%2218814126846%22%2C%22user_email%22%3A%2240363946%40qq.com%22%2C%22last_login_time%22%3A1544061818%2C%22last_login_ip%22%3A%22127.0.0.1%22%2C%22create_time%22%3A%221970-01-01+08%3A00%3A00%22%7D; PHPSESSID=can1l1nugjhpmmd7jbsnjvle42',
+  'accept-language' => 'zh-CN,zh;q=0.9,ja;q=0.8,en;q=0.7',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.169 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'tp.test',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] admin\index\controller\Index->index[ E:\phpstudy_pro\WWW\tpframe\admin\index\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] E:\phpstudy_pro\WWW\tpframe\admin/index\view\\index.html [ array (
+  0 => 'show',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002001s ] mysql:host=127.0.0.1;dbname=tpbase;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_baseset` [ RunTime:0.002000s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_baseset` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2019-12-24T16:02:06+08:00 ] 127.0.0.1 GET tp.test/admin/user/admin/adminlog
+[运行时间：0.051003s] [吞吐率：19.61req/s] [内存消耗：2,616.91kb] [文件加载：50]
+[ info ] [ LANG ] E:\phpstudy_pro\WWW\tpframe\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'user',
+    1 => 'admin',
+    2 => 'adminlog',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'ADMIN=%7B%22id%22%3A1%2C%22user_login%22%3A%22admin%22%2C%22user_status%22%3A%220%22%2C%22user_type%22%3A0%2C%22mobile%22%3A%2218814126846%22%2C%22user_email%22%3A%2240363946%40qq.com%22%2C%22last_login_time%22%3A1544061818%2C%22last_login_ip%22%3A%22127.0.0.1%22%2C%22create_time%22%3A%221970-01-01+08%3A00%3A00%22%7D; PHPSESSID=can1l1nugjhpmmd7jbsnjvle42',
+  'accept-language' => 'zh-CN,zh;q=0.9,ja;q=0.8,en;q=0.7',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://tp.test/admin/',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.169 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'tp.test',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] admin\user\controller\Admin->adminLog[ E:\phpstudy_pro\WWW\tpframe\admin\user\controller\Admin.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] E:\phpstudy_pro\WWW\tpframe\admin/user\view\\adminlog.html [ array (
+  0 => 'log',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002000s ] mysql:host=127.0.0.1;dbname=tpbase;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_adminlog` [ RunTime:0.003000s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_adminlog` [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[ 2019-12-24T16:02:10+08:00 ] 127.0.0.1 GET tp.test/admin/user/admin/editpass
+[运行时间：0.041002s] [吞吐率：24.39req/s] [内存消耗：1,605.42kb] [文件加载：41]
+[ info ] [ LANG ] E:\phpstudy_pro\WWW\tpframe\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'user',
+    1 => 'admin',
+    2 => 'editpass',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'ADMIN=%7B%22id%22%3A1%2C%22user_login%22%3A%22admin%22%2C%22user_status%22%3A%220%22%2C%22user_type%22%3A0%2C%22mobile%22%3A%2218814126846%22%2C%22user_email%22%3A%2240363946%40qq.com%22%2C%22last_login_time%22%3A1544061818%2C%22last_login_ip%22%3A%22127.0.0.1%22%2C%22create_time%22%3A%221970-01-01+08%3A00%3A00%22%7D; PHPSESSID=can1l1nugjhpmmd7jbsnjvle42',
+  'accept-language' => 'zh-CN,zh;q=0.9,ja;q=0.8,en;q=0.7',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://tp.test/admin/user/admin/adminlog',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.169 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'tp.test',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] admin\user\controller\Admin->editPass[ E:\phpstudy_pro\WWW\tpframe\admin\user\controller\Admin.php ]
+[ info ] [ VIEW ] E:\phpstudy_pro\WWW\tpframe\admin/user\view\\editpass.html [ array (
+  0 => 'admin',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-12-24T16:02:11+08:00 ] 127.0.0.1 GET tp.test/admin/user/admin/adminlog
+[运行时间：0.055004s] [吞吐率：18.18req/s] [内存消耗：2,616.94kb] [文件加载：50]
+[ info ] [ LANG ] E:\phpstudy_pro\WWW\tpframe\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'user',
+    1 => 'admin',
+    2 => 'adminlog',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'ADMIN=%7B%22id%22%3A1%2C%22user_login%22%3A%22admin%22%2C%22user_status%22%3A%220%22%2C%22user_type%22%3A0%2C%22mobile%22%3A%2218814126846%22%2C%22user_email%22%3A%2240363946%40qq.com%22%2C%22last_login_time%22%3A1544061818%2C%22last_login_ip%22%3A%22127.0.0.1%22%2C%22create_time%22%3A%221970-01-01+08%3A00%3A00%22%7D; PHPSESSID=can1l1nugjhpmmd7jbsnjvle42',
+  'accept-language' => 'zh-CN,zh;q=0.9,ja;q=0.8,en;q=0.7',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://tp.test/admin/user/admin/editpass',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.169 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'tp.test',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] admin\user\controller\Admin->adminLog[ E:\phpstudy_pro\WWW\tpframe\admin\user\controller\Admin.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] E:\phpstudy_pro\WWW\tpframe\admin/user\view\\adminlog.html [ array (
+  0 => 'log',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002000s ] mysql:host=127.0.0.1;dbname=tpbase;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_adminlog` [ RunTime:0.004000s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_adminlog` [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[ 2019-12-24T16:03:18+08:00 ] 127.0.0.1 GET tp.test/admin/user/admin/adminlog
+[运行时间：0.059003s] [吞吐率：16.95req/s] [内存消耗：2,760.30kb] [文件加载：52]
+[ info ] [ LANG ] E:\phpstudy_pro\WWW\tpframe\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'user',
+    1 => 'admin',
+    2 => 'adminlog',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'ADMIN=%7B%22id%22%3A1%2C%22user_login%22%3A%22admin%22%2C%22user_status%22%3A%220%22%2C%22user_type%22%3A0%2C%22mobile%22%3A%2218814126846%22%2C%22user_email%22%3A%2240363946%40qq.com%22%2C%22last_login_time%22%3A1544061818%2C%22last_login_ip%22%3A%22127.0.0.1%22%2C%22create_time%22%3A%221970-01-01+08%3A00%3A00%22%7D; PHPSESSID=can1l1nugjhpmmd7jbsnjvle42',
+  'accept-language' => 'zh-CN,zh;q=0.9,ja;q=0.8,en;q=0.7',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://tp.test/admin/user/admin/editpass',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.169 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'tp.test',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] admin\user\controller\Admin->adminLog[ E:\phpstudy_pro\WWW\tpframe\admin\user\controller\Admin.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] E:\phpstudy_pro\WWW\tpframe\admin/user\view\\adminlog.html [ array (
+  0 => 'log',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:host=127.0.0.1;dbname=tpbase;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_adminlog` [ RunTime:0.005001s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_adminlog` [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2019-12-24T17:02:29+08:00 ] 127.0.0.1 GET tp.test/admin/index/index/index
+[运行时间：0.070004s] [吞吐率：14.28req/s] [内存消耗：2,628.03kb] [文件加载：51]
+[ info ] [ LANG ] E:\phpstudy_pro\WWW\tpframe\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'ADMIN=%7B%22id%22%3A1%2C%22user_login%22%3A%22admin%22%2C%22user_status%22%3A%220%22%2C%22user_type%22%3A0%2C%22mobile%22%3A%2218814126846%22%2C%22user_email%22%3A%2240363946%40qq.com%22%2C%22last_login_time%22%3A1544061818%2C%22last_login_ip%22%3A%22127.0.0.1%22%2C%22create_time%22%3A%221970-01-01+08%3A00%3A00%22%7D; PHPSESSID=can1l1nugjhpmmd7jbsnjvle42',
+  'accept-language' => 'zh-CN,zh;q=0.9,ja;q=0.8,en;q=0.7',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://tp.test/admin/',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.169 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'tp.test',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] admin\index\controller\Index->index[ E:\phpstudy_pro\WWW\tpframe\admin\index\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] E:\phpstudy_pro\WWW\tpframe\admin/index\view\\index.html [ array (
+  0 => 'show',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002000s ] mysql:host=127.0.0.1;dbname=tpbase;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_baseset` [ RunTime:0.002000s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_baseset` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2019-12-24T17:02:32+08:00 ] 127.0.0.1 GET tp.test/admin/user/admin/editpass
+[运行时间：0.031002s] [吞吐率：32.26req/s] [内存消耗：1,605.41kb] [文件加载：41]
+[ info ] [ LANG ] E:\phpstudy_pro\WWW\tpframe\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'user',
+    1 => 'admin',
+    2 => 'editpass',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'ADMIN=%7B%22id%22%3A1%2C%22user_login%22%3A%22admin%22%2C%22user_status%22%3A%220%22%2C%22user_type%22%3A0%2C%22mobile%22%3A%2218814126846%22%2C%22user_email%22%3A%2240363946%40qq.com%22%2C%22last_login_time%22%3A1544061818%2C%22last_login_ip%22%3A%22127.0.0.1%22%2C%22create_time%22%3A%221970-01-01+08%3A00%3A00%22%7D; PHPSESSID=can1l1nugjhpmmd7jbsnjvle42',
+  'accept-language' => 'zh-CN,zh;q=0.9,ja;q=0.8,en;q=0.7',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://tp.test/admin/index/index/index',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.169 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'tp.test',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] admin\user\controller\Admin->editPass[ E:\phpstudy_pro\WWW\tpframe\admin\user\controller\Admin.php ]
+[ info ] [ VIEW ] E:\phpstudy_pro\WWW\tpframe\admin/user\view\\editpass.html [ array (
+  0 => 'admin',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-12-24T17:02:33+08:00 ] 127.0.0.1 GET tp.test/admin/user/index/index
+[运行时间：0.043003s] [吞吐率：23.25req/s] [内存消耗：1,279.04kb] [文件加载：35]
+[ info ] [ LANG ] E:\phpstudy_pro\WWW\tpframe\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'user',
+    1 => 'index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'ADMIN=%7B%22id%22%3A1%2C%22user_login%22%3A%22admin%22%2C%22user_status%22%3A%220%22%2C%22user_type%22%3A0%2C%22mobile%22%3A%2218814126846%22%2C%22user_email%22%3A%2240363946%40qq.com%22%2C%22last_login_time%22%3A1544061818%2C%22last_login_ip%22%3A%22127.0.0.1%22%2C%22create_time%22%3A%221970-01-01+08%3A00%3A00%22%7D; PHPSESSID=can1l1nugjhpmmd7jbsnjvle42',
+  'accept-language' => 'zh-CN,zh;q=0.9,ja;q=0.8,en;q=0.7',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://tp.test/admin/user/admin/editpass',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.169 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'tp.test',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-12-24T17:02:35+08:00 ] 127.0.0.1 GET tp.test/admin/user/admin/editpass
+[运行时间：0.046003s] [吞吐率：21.74req/s] [内存消耗：1,605.41kb] [文件加载：41]
+[ info ] [ LANG ] E:\phpstudy_pro\WWW\tpframe\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'user',
+    1 => 'admin',
+    2 => 'editpass',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'ADMIN=%7B%22id%22%3A1%2C%22user_login%22%3A%22admin%22%2C%22user_status%22%3A%220%22%2C%22user_type%22%3A0%2C%22mobile%22%3A%2218814126846%22%2C%22user_email%22%3A%2240363946%40qq.com%22%2C%22last_login_time%22%3A1544061818%2C%22last_login_ip%22%3A%22127.0.0.1%22%2C%22create_time%22%3A%221970-01-01+08%3A00%3A00%22%7D; PHPSESSID=can1l1nugjhpmmd7jbsnjvle42',
+  'accept-language' => 'zh-CN,zh;q=0.9,ja;q=0.8,en;q=0.7',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://tp.test/admin/index/index/index',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.169 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'tp.test',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] admin\user\controller\Admin->editPass[ E:\phpstudy_pro\WWW\tpframe\admin\user\controller\Admin.php ]
+[ info ] [ VIEW ] E:\phpstudy_pro\WWW\tpframe\admin/user\view\\editpass.html [ array (
+  0 => 'admin',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-12-24T17:20:32+08:00 ] 127.0.0.1 GET tp.test/admin/user/admin/editpass
+[运行时间：0.060003s] [吞吐率：16.67req/s] [内存消耗：1,605.48kb] [文件加载：42]
+[ info ] [ LANG ] E:\phpstudy_pro\WWW\tpframe\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'user',
+    1 => 'admin',
+    2 => 'editpass',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'ADMIN=%7B%22id%22%3A1%2C%22user_login%22%3A%22admin%22%2C%22user_status%22%3A%220%22%2C%22user_type%22%3A0%2C%22mobile%22%3A%2218814126846%22%2C%22user_email%22%3A%2240363946%40qq.com%22%2C%22last_login_time%22%3A1544061818%2C%22last_login_ip%22%3A%22127.0.0.1%22%2C%22create_time%22%3A%221970-01-01+08%3A00%3A00%22%7D; PHPSESSID=can1l1nugjhpmmd7jbsnjvle42',
+  'accept-language' => 'zh-CN,zh;q=0.9,ja;q=0.8,en;q=0.7',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://tp.test/admin/index/index/index',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.169 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'tp.test',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-12-24T17:20:32+08:00 ] 127.0.0.1 GET tp.test/admin/user/login/login
+[运行时间：0.050003s] [吞吐率：20.00req/s] [内存消耗：1,743.94kb] [文件加载：42]
+[ info ] [ LANG ] E:\phpstudy_pro\WWW\tpframe\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'user',
+    1 => 'login',
+    2 => 'login',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'ADMIN=%7B%22id%22%3A1%2C%22user_login%22%3A%22admin%22%2C%22user_status%22%3A%220%22%2C%22user_type%22%3A0%2C%22mobile%22%3A%2218814126846%22%2C%22user_email%22%3A%2240363946%40qq.com%22%2C%22last_login_time%22%3A1544061818%2C%22last_login_ip%22%3A%22127.0.0.1%22%2C%22create_time%22%3A%221970-01-01+08%3A00%3A00%22%7D; PHPSESSID=can1l1nugjhpmmd7jbsnjvle42',
+  'accept-language' => 'zh-CN,zh;q=0.9,ja;q=0.8,en;q=0.7',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://tp.test/admin/index/index/index',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.169 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'tp.test',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] admin\user\controller\Login->login[ E:\phpstudy_pro\WWW\tpframe\admin\user\controller\Login.php ]
+[ info ] [ VIEW ] E:\phpstudy_pro\WWW\tpframe\admin/user\view\\login.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-12-24T17:20:32+08:00 ] 127.0.0.1 GET tp.test/admin/user/login/captchaimg
+[运行时间：0.067003s] [吞吐率：14.92req/s] [内存消耗：1,601.80kb] [文件加载：39]
+[ info ] [ LANG ] E:\phpstudy_pro\WWW\tpframe\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'user',
+    1 => 'login',
+    2 => 'captchaimg',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'ADMIN=%7B%22id%22%3A1%2C%22user_login%22%3A%22admin%22%2C%22user_status%22%3A%220%22%2C%22user_type%22%3A0%2C%22mobile%22%3A%2218814126846%22%2C%22user_email%22%3A%2240363946%40qq.com%22%2C%22last_login_time%22%3A1544061818%2C%22last_login_ip%22%3A%22127.0.0.1%22%2C%22create_time%22%3A%221970-01-01+08%3A00%3A00%22%7D; PHPSESSID=can1l1nugjhpmmd7jbsnjvle42',
+  'accept-language' => 'zh-CN,zh;q=0.9,ja;q=0.8,en;q=0.7',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://tp.test/admin/user/login/login',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.169 Safari/537.36',
+  'connection' => 'close',
+  'host' => 'tp.test',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] admin\user\controller\Login->captchaImg[ E:\phpstudy_pro\WWW\tpframe\admin\user\controller\Login.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-12-24T17:20:41+08:00 ] 127.0.0.1 GET tp.test/admin/user/login/captchaimg?
+[运行时间：0.041002s] [吞吐率：24.39req/s] [内存消耗：1,601.96kb] [文件加载：39]
+[ info ] [ LANG ] E:\phpstudy_pro\WWW\tpframe\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'user',
+    1 => 'login',
+    2 => 'captchaimg',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'ADMIN=%7B%22id%22%3A1%2C%22user_login%22%3A%22admin%22%2C%22user_status%22%3A%220%22%2C%22user_type%22%3A0%2C%22mobile%22%3A%2218814126846%22%2C%22user_email%22%3A%2240363946%40qq.com%22%2C%22last_login_time%22%3A1544061818%2C%22last_login_ip%22%3A%22127.0.0.1%22%2C%22create_time%22%3A%221970-01-01+08%3A00%3A00%22%7D; PHPSESSID=can1l1nugjhpmmd7jbsnjvle42',
+  'accept-language' => 'zh-CN,zh;q=0.9,ja;q=0.8,en;q=0.7',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://tp.test/admin/user/login/login',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.169 Safari/537.36',
+  'connection' => 'close',
+  'host' => 'tp.test',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] admin\user\controller\Login->captchaImg[ E:\phpstudy_pro\WWW\tpframe\admin\user\controller\Login.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-12-24T17:20:43+08:00 ] 127.0.0.1 GET tp.test/admin/user/login/captchaimg??
+[运行时间：0.041003s] [吞吐率：24.39req/s] [内存消耗：1,602.63kb] [文件加载：39]
+[ info ] [ LANG ] E:\phpstudy_pro\WWW\tpframe\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'user',
+    1 => 'login',
+    2 => 'captchaimg',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'ADMIN=%7B%22id%22%3A1%2C%22user_login%22%3A%22admin%22%2C%22user_status%22%3A%220%22%2C%22user_type%22%3A0%2C%22mobile%22%3A%2218814126846%22%2C%22user_email%22%3A%2240363946%40qq.com%22%2C%22last_login_time%22%3A1544061818%2C%22last_login_ip%22%3A%22127.0.0.1%22%2C%22create_time%22%3A%221970-01-01+08%3A00%3A00%22%7D; PHPSESSID=can1l1nugjhpmmd7jbsnjvle42',
+  'accept-language' => 'zh-CN,zh;q=0.9,ja;q=0.8,en;q=0.7',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://tp.test/admin/user/login/login',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.169 Safari/537.36',
+  'connection' => 'close',
+  'host' => 'tp.test',
+)
+[ info ] [ PARAM ] array (
+  '?' => '',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] admin\user\controller\Login->captchaImg[ E:\phpstudy_pro\WWW\tpframe\admin\user\controller\Login.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-12-24T17:20:45+08:00 ] 127.0.0.1 GET tp.test/admin/user/login/captchaimg???
+[运行时间：0.037002s] [吞吐率：27.03req/s] [内存消耗：1,602.63kb] [文件加载：39]
+[ info ] [ LANG ] E:\phpstudy_pro\WWW\tpframe\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'user',
+    1 => 'login',
+    2 => 'captchaimg',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'ADMIN=%7B%22id%22%3A1%2C%22user_login%22%3A%22admin%22%2C%22user_status%22%3A%220%22%2C%22user_type%22%3A0%2C%22mobile%22%3A%2218814126846%22%2C%22user_email%22%3A%2240363946%40qq.com%22%2C%22last_login_time%22%3A1544061818%2C%22last_login_ip%22%3A%22127.0.0.1%22%2C%22create_time%22%3A%221970-01-01+08%3A00%3A00%22%7D; PHPSESSID=can1l1nugjhpmmd7jbsnjvle42',
+  'accept-language' => 'zh-CN,zh;q=0.9,ja;q=0.8,en;q=0.7',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://tp.test/admin/user/login/login',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.169 Safari/537.36',
+  'connection' => 'close',
+  'host' => 'tp.test',
+)
+[ info ] [ PARAM ] array (
+  '??' => '',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] admin\user\controller\Login->captchaImg[ E:\phpstudy_pro\WWW\tpframe\admin\user\controller\Login.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-12-24T17:20:46+08:00 ] 127.0.0.1 GET tp.test/admin/user/login/captchaimg????
+[运行时间：0.051003s] [吞吐率：19.61req/s] [内存消耗：1,602.63kb] [文件加载：39]
+[ info ] [ LANG ] E:\phpstudy_pro\WWW\tpframe\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'user',
+    1 => 'login',
+    2 => 'captchaimg',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'ADMIN=%7B%22id%22%3A1%2C%22user_login%22%3A%22admin%22%2C%22user_status%22%3A%220%22%2C%22user_type%22%3A0%2C%22mobile%22%3A%2218814126846%22%2C%22user_email%22%3A%2240363946%40qq.com%22%2C%22last_login_time%22%3A1544061818%2C%22last_login_ip%22%3A%22127.0.0.1%22%2C%22create_time%22%3A%221970-01-01+08%3A00%3A00%22%7D; PHPSESSID=can1l1nugjhpmmd7jbsnjvle42',
+  'accept-language' => 'zh-CN,zh;q=0.9,ja;q=0.8,en;q=0.7',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://tp.test/admin/user/login/login',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.169 Safari/537.36',
+  'connection' => 'close',
+  'host' => 'tp.test',
+)
+[ info ] [ PARAM ] array (
+  '???' => '',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] admin\user\controller\Login->captchaImg[ E:\phpstudy_pro\WWW\tpframe\admin\user\controller\Login.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-12-24T17:20:51+08:00 ] 127.0.0.1 POST tp.test/admin/user/login/dologin
+[运行时间：0.106006s] [吞吐率：9.43req/s] [内存消耗：2,623.05kb] [文件加载：49]
+[ info ] [ LANG ] E:\phpstudy_pro\WWW\tpframe\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'user',
+    1 => 'login',
+    2 => 'dologin',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'ADMIN=%7B%22id%22%3A1%2C%22user_login%22%3A%22admin%22%2C%22user_status%22%3A%220%22%2C%22user_type%22%3A0%2C%22mobile%22%3A%2218814126846%22%2C%22user_email%22%3A%2240363946%40qq.com%22%2C%22last_login_time%22%3A1544061818%2C%22last_login_ip%22%3A%22127.0.0.1%22%2C%22create_time%22%3A%221970-01-01+08%3A00%3A00%22%7D; PHPSESSID=can1l1nugjhpmmd7jbsnjvle42',
+  'accept-language' => 'zh-CN,zh;q=0.9,ja;q=0.8,en;q=0.7',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://tp.test/admin/user/login/login',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.169 Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+  'origin' => 'http://tp.test',
+  'accept' => '*/*',
+  'content-length' => '43',
+  'connection' => 'close',
+  'host' => 'tp.test',
+)
+[ info ] [ PARAM ] array (
+  'user_login' => 'admin',
+  'user_pass' => '123456',
+  'code' => 'aywz',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] admin\user\controller\Login->doLogin[ E:\phpstudy_pro\WWW\tpframe\admin\user\controller\Login.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:host=127.0.0.1;dbname=tpbase;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_admin` [ RunTime:0.057003s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_admin` WHERE  `user_login` = 'admin' LIMIT 1 [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[ 2019-12-24T17:20:57+08:00 ] 127.0.0.1 POST tp.test/admin/user/login/dologin
+[运行时间：0.078004s] [吞吐率：12.82req/s] [内存消耗：2,630.67kb] [文件加载：51]
+[ info ] [ LANG ] E:\phpstudy_pro\WWW\tpframe\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'user',
+    1 => 'login',
+    2 => 'dologin',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'ADMIN=%7B%22id%22%3A1%2C%22user_login%22%3A%22admin%22%2C%22user_status%22%3A%220%22%2C%22user_type%22%3A0%2C%22mobile%22%3A%2218814126846%22%2C%22user_email%22%3A%2240363946%40qq.com%22%2C%22last_login_time%22%3A1544061818%2C%22last_login_ip%22%3A%22127.0.0.1%22%2C%22create_time%22%3A%221970-01-01+08%3A00%3A00%22%7D; PHPSESSID=can1l1nugjhpmmd7jbsnjvle42',
+  'accept-language' => 'zh-CN,zh;q=0.9,ja;q=0.8,en;q=0.7',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://tp.test/admin/user/login/login',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.169 Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+  'origin' => 'http://tp.test',
+  'accept' => '*/*',
+  'content-length' => '43',
+  'connection' => 'close',
+  'host' => 'tp.test',
+)
+[ info ] [ PARAM ] array (
+  'user_login' => 'admin',
+  'user_pass' => '111111',
+  'code' => 'aywz',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] admin\user\controller\Login->doLogin[ E:\phpstudy_pro\WWW\tpframe\admin\user\controller\Login.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002000s ] mysql:host=127.0.0.1;dbname=tpbase;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_admin` [ RunTime:0.003000s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_admin` WHERE  `user_login` = 'admin' LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_adminlog` [ RunTime:0.001000s ]
+[ sql ] [ SQL ] INSERT INTO `tp_adminlog` (`admin_name` , `admin_id` , `operate_time` , `action` , `ip`) VALUES ('admin' , 1 , 1577179256 , '登录' , '127.0.0.1') [ RunTime:0.012001s ]
+---------------------------------------------------------------
+[ 2019-12-24T17:21:05+08:00 ] 127.0.0.1 GET tp.test/admin/
+[运行时间：0.044002s] [吞吐率：22.73req/s] [内存消耗：1,860.80kb] [文件加载：44]
+[ info ] [ LANG ] E:\phpstudy_pro\WWW\tpframe\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'ADMIN=%7B%22id%22%3A1%2C%22user_login%22%3A%22admin%22%2C%22user_status%22%3A%220%22%2C%22user_type%22%3A0%2C%22mobile%22%3A%2218814126846%22%2C%22user_email%22%3A%2240363946%40qq.com%22%2C%22last_login_time%22%3A1544061818%2C%22last_login_ip%22%3A%22127.0.0.1%22%2C%22create_time%22%3A%221970-01-01+08%3A00%3A00%22%7D; PHPSESSID=can1l1nugjhpmmd7jbsnjvle42',
+  'accept-language' => 'zh-CN,zh;q=0.9,ja;q=0.8,en;q=0.7',
+  'accept-encoding' => 'gzip, deflate',
+  'purpose' => 'prefetch',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.169 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'tp.test',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-12-24T17:21:05+08:00 ] 127.0.0.1 GET tp.test/admin/user/login/login
+[运行时间：0.039002s] [吞吐率：25.64req/s] [内存消耗：1,816.74kb] [文件加载：42]
+[ info ] [ LANG ] E:\phpstudy_pro\WWW\tpframe\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'user',
+    1 => 'login',
+    2 => 'login',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'ADMIN=%7B%22id%22%3A1%2C%22user_login%22%3A%22admin%22%2C%22user_status%22%3A%220%22%2C%22user_type%22%3A0%2C%22mobile%22%3A%2218814126846%22%2C%22user_email%22%3A%2240363946%40qq.com%22%2C%22last_login_time%22%3A1544061818%2C%22last_login_ip%22%3A%22127.0.0.1%22%2C%22create_time%22%3A%221970-01-01+08%3A00%3A00%22%7D; PHPSESSID=can1l1nugjhpmmd7jbsnjvle42',
+  'accept-language' => 'zh-CN,zh;q=0.9,ja;q=0.8,en;q=0.7',
+  'accept-encoding' => 'gzip, deflate',
+  'purpose' => 'prefetch',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.169 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'tp.test',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-12-24T17:21:05+08:00 ] 127.0.0.1 GET tp.test/admin/Index/index
+[运行时间：0.037002s] [吞吐率：27.03req/s] [内存消耗：1,863.39kb] [文件加载：44]
+[ info ] [ LANG ] E:\phpstudy_pro\WWW\tpframe\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'ADMIN=%7B%22id%22%3A1%2C%22user_login%22%3A%22admin%22%2C%22user_status%22%3A%220%22%2C%22user_type%22%3A0%2C%22mobile%22%3A%2218814126846%22%2C%22user_email%22%3A%2240363946%40qq.com%22%2C%22last_login_time%22%3A1544061818%2C%22last_login_ip%22%3A%22127.0.0.1%22%2C%22create_time%22%3A%221970-01-01+08%3A00%3A00%22%7D; PHPSESSID=can1l1nugjhpmmd7jbsnjvle42',
+  'accept-language' => 'zh-CN,zh;q=0.9,ja;q=0.8,en;q=0.7',
+  'accept-encoding' => 'gzip, deflate',
+  'purpose' => 'prefetch',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.169 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'tp.test',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-12-24T17:21:05+08:00 ] 127.0.0.1 GET tp.test/admin/user/login/login
+[运行时间：0.038003s] [吞吐率：26.31req/s] [内存消耗：1,816.74kb] [文件加载：42]
+[ info ] [ LANG ] E:\phpstudy_pro\WWW\tpframe\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'user',
+    1 => 'login',
+    2 => 'login',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'ADMIN=%7B%22id%22%3A1%2C%22user_login%22%3A%22admin%22%2C%22user_status%22%3A%220%22%2C%22user_type%22%3A0%2C%22mobile%22%3A%2218814126846%22%2C%22user_email%22%3A%2240363946%40qq.com%22%2C%22last_login_time%22%3A1544061818%2C%22last_login_ip%22%3A%22127.0.0.1%22%2C%22create_time%22%3A%221970-01-01+08%3A00%3A00%22%7D; PHPSESSID=can1l1nugjhpmmd7jbsnjvle42',
+  'accept-language' => 'zh-CN,zh;q=0.9,ja;q=0.8,en;q=0.7',
+  'accept-encoding' => 'gzip, deflate',
+  'purpose' => 'prefetch',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.169 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'tp.test',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-12-24T17:21:05+08:00 ] 127.0.0.1 GET tp.test/admin/Index/index
+[运行时间：0.035002s] [吞吐率：28.57req/s] [内存消耗：1,863.39kb] [文件加载：44]
+[ info ] [ LANG ] E:\phpstudy_pro\WWW\tpframe\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'ADMIN=%7B%22id%22%3A1%2C%22user_login%22%3A%22admin%22%2C%22user_status%22%3A%220%22%2C%22user_type%22%3A0%2C%22mobile%22%3A%2218814126846%22%2C%22user_email%22%3A%2240363946%40qq.com%22%2C%22last_login_time%22%3A1544061818%2C%22last_login_ip%22%3A%22127.0.0.1%22%2C%22create_time%22%3A%221970-01-01+08%3A00%3A00%22%7D; PHPSESSID=can1l1nugjhpmmd7jbsnjvle42',
+  'accept-language' => 'zh-CN,zh;q=0.9,ja;q=0.8,en;q=0.7',
+  'accept-encoding' => 'gzip, deflate',
+  'purpose' => 'prefetch',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.169 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'tp.test',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-12-24T17:21:05+08:00 ] 127.0.0.1 GET tp.test/admin/user/login/login
+[运行时间：0.036002s] [吞吐率：27.78req/s] [内存消耗：1,816.74kb] [文件加载：42]
+[ info ] [ LANG ] E:\phpstudy_pro\WWW\tpframe\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'user',
+    1 => 'login',
+    2 => 'login',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'ADMIN=%7B%22id%22%3A1%2C%22user_login%22%3A%22admin%22%2C%22user_status%22%3A%220%22%2C%22user_type%22%3A0%2C%22mobile%22%3A%2218814126846%22%2C%22user_email%22%3A%2240363946%40qq.com%22%2C%22last_login_time%22%3A1544061818%2C%22last_login_ip%22%3A%22127.0.0.1%22%2C%22create_time%22%3A%221970-01-01+08%3A00%3A00%22%7D; PHPSESSID=can1l1nugjhpmmd7jbsnjvle42',
+  'accept-language' => 'zh-CN,zh;q=0.9,ja;q=0.8,en;q=0.7',
+  'accept-encoding' => 'gzip, deflate',
+  'purpose' => 'prefetch',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.169 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'tp.test',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-12-24T17:21:05+08:00 ] 127.0.0.1 GET tp.test/admin/Index/index
+[运行时间：0.034002s] [吞吐率：29.41req/s] [内存消耗：1,863.39kb] [文件加载：44]
+[ info ] [ LANG ] E:\phpstudy_pro\WWW\tpframe\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'ADMIN=%7B%22id%22%3A1%2C%22user_login%22%3A%22admin%22%2C%22user_status%22%3A%220%22%2C%22user_type%22%3A0%2C%22mobile%22%3A%2218814126846%22%2C%22user_email%22%3A%2240363946%40qq.com%22%2C%22last_login_time%22%3A1544061818%2C%22last_login_ip%22%3A%22127.0.0.1%22%2C%22create_time%22%3A%221970-01-01+08%3A00%3A00%22%7D; PHPSESSID=can1l1nugjhpmmd7jbsnjvle42',
+  'accept-language' => 'zh-CN,zh;q=0.9,ja;q=0.8,en;q=0.7',
+  'accept-encoding' => 'gzip, deflate',
+  'purpose' => 'prefetch',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.169 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'tp.test',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-12-24T17:21:05+08:00 ] 127.0.0.1 GET tp.test/admin/user/login/login
+[运行时间：0.033002s] [吞吐率：30.30req/s] [内存消耗：1,816.74kb] [文件加载：42]
+[ info ] [ LANG ] E:\phpstudy_pro\WWW\tpframe\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'user',
+    1 => 'login',
+    2 => 'login',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'ADMIN=%7B%22id%22%3A1%2C%22user_login%22%3A%22admin%22%2C%22user_status%22%3A%220%22%2C%22user_type%22%3A0%2C%22mobile%22%3A%2218814126846%22%2C%22user_email%22%3A%2240363946%40qq.com%22%2C%22last_login_time%22%3A1544061818%2C%22last_login_ip%22%3A%22127.0.0.1%22%2C%22create_time%22%3A%221970-01-01+08%3A00%3A00%22%7D; PHPSESSID=can1l1nugjhpmmd7jbsnjvle42',
+  'accept-language' => 'zh-CN,zh;q=0.9,ja;q=0.8,en;q=0.7',
+  'accept-encoding' => 'gzip, deflate',
+  'purpose' => 'prefetch',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.169 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'tp.test',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-12-24T17:21:06+08:00 ] 127.0.0.1 GET tp.test/admin/Index/index
+[运行时间：0.035002s] [吞吐率：28.57req/s] [内存消耗：1,863.39kb] [文件加载：44]
+[ info ] [ LANG ] E:\phpstudy_pro\WWW\tpframe\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'ADMIN=%7B%22id%22%3A1%2C%22user_login%22%3A%22admin%22%2C%22user_status%22%3A%220%22%2C%22user_type%22%3A0%2C%22mobile%22%3A%2218814126846%22%2C%22user_email%22%3A%2240363946%40qq.com%22%2C%22last_login_time%22%3A1544061818%2C%22last_login_ip%22%3A%22127.0.0.1%22%2C%22create_time%22%3A%221970-01-01+08%3A00%3A00%22%7D; PHPSESSID=can1l1nugjhpmmd7jbsnjvle42',
+  'accept-language' => 'zh-CN,zh;q=0.9,ja;q=0.8,en;q=0.7',
+  'accept-encoding' => 'gzip, deflate',
+  'purpose' => 'prefetch',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.169 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'tp.test',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-12-24T17:21:06+08:00 ] 127.0.0.1 GET tp.test/admin/user/login/login
+[运行时间：0.034002s] [吞吐率：29.41req/s] [内存消耗：1,816.74kb] [文件加载：42]
+[ info ] [ LANG ] E:\phpstudy_pro\WWW\tpframe\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'user',
+    1 => 'login',
+    2 => 'login',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'ADMIN=%7B%22id%22%3A1%2C%22user_login%22%3A%22admin%22%2C%22user_status%22%3A%220%22%2C%22user_type%22%3A0%2C%22mobile%22%3A%2218814126846%22%2C%22user_email%22%3A%2240363946%40qq.com%22%2C%22last_login_time%22%3A1544061818%2C%22last_login_ip%22%3A%22127.0.0.1%22%2C%22create_time%22%3A%221970-01-01+08%3A00%3A00%22%7D; PHPSESSID=can1l1nugjhpmmd7jbsnjvle42',
+  'accept-language' => 'zh-CN,zh;q=0.9,ja;q=0.8,en;q=0.7',
+  'accept-encoding' => 'gzip, deflate',
+  'purpose' => 'prefetch',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.169 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'tp.test',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-12-24T17:21:06+08:00 ] 127.0.0.1 GET tp.test/admin/Index/index
+[运行时间：0.037002s] [吞吐率：27.03req/s] [内存消耗：1,863.39kb] [文件加载：44]
+[ info ] [ LANG ] E:\phpstudy_pro\WWW\tpframe\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'ADMIN=%7B%22id%22%3A1%2C%22user_login%22%3A%22admin%22%2C%22user_status%22%3A%220%22%2C%22user_type%22%3A0%2C%22mobile%22%3A%2218814126846%22%2C%22user_email%22%3A%2240363946%40qq.com%22%2C%22last_login_time%22%3A1544061818%2C%22last_login_ip%22%3A%22127.0.0.1%22%2C%22create_time%22%3A%221970-01-01+08%3A00%3A00%22%7D; PHPSESSID=can1l1nugjhpmmd7jbsnjvle42',
+  'accept-language' => 'zh-CN,zh;q=0.9,ja;q=0.8,en;q=0.7',
+  'accept-encoding' => 'gzip, deflate',
+  'purpose' => 'prefetch',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.169 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'tp.test',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-12-24T17:21:06+08:00 ] 127.0.0.1 GET tp.test/admin/user/login/login
+[运行时间：0.033001s] [吞吐率：30.30req/s] [内存消耗：1,816.74kb] [文件加载：42]
+[ info ] [ LANG ] E:\phpstudy_pro\WWW\tpframe\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'user',
+    1 => 'login',
+    2 => 'login',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'ADMIN=%7B%22id%22%3A1%2C%22user_login%22%3A%22admin%22%2C%22user_status%22%3A%220%22%2C%22user_type%22%3A0%2C%22mobile%22%3A%2218814126846%22%2C%22user_email%22%3A%2240363946%40qq.com%22%2C%22last_login_time%22%3A1544061818%2C%22last_login_ip%22%3A%22127.0.0.1%22%2C%22create_time%22%3A%221970-01-01+08%3A00%3A00%22%7D; PHPSESSID=can1l1nugjhpmmd7jbsnjvle42',
+  'accept-language' => 'zh-CN,zh;q=0.9,ja;q=0.8,en;q=0.7',
+  'accept-encoding' => 'gzip, deflate',
+  'purpose' => 'prefetch',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.169 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'tp.test',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-12-24T17:21:06+08:00 ] 127.0.0.1 GET tp.test/admin/Index/index
+[运行时间：0.036002s] [吞吐率：27.78req/s] [内存消耗：1,863.39kb] [文件加载：44]
+[ info ] [ LANG ] E:\phpstudy_pro\WWW\tpframe\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'ADMIN=%7B%22id%22%3A1%2C%22user_login%22%3A%22admin%22%2C%22user_status%22%3A%220%22%2C%22user_type%22%3A0%2C%22mobile%22%3A%2218814126846%22%2C%22user_email%22%3A%2240363946%40qq.com%22%2C%22last_login_time%22%3A1544061818%2C%22last_login_ip%22%3A%22127.0.0.1%22%2C%22create_time%22%3A%221970-01-01+08%3A00%3A00%22%7D; PHPSESSID=can1l1nugjhpmmd7jbsnjvle42',
+  'accept-language' => 'zh-CN,zh;q=0.9,ja;q=0.8,en;q=0.7',
+  'accept-encoding' => 'gzip, deflate',
+  'purpose' => 'prefetch',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.169 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'tp.test',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-12-24T17:21:06+08:00 ] 127.0.0.1 GET tp.test/admin/user/login/login
+[运行时间：0.034002s] [吞吐率：29.41req/s] [内存消耗：1,816.74kb] [文件加载：42]
+[ info ] [ LANG ] E:\phpstudy_pro\WWW\tpframe\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'user',
+    1 => 'login',
+    2 => 'login',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'ADMIN=%7B%22id%22%3A1%2C%22user_login%22%3A%22admin%22%2C%22user_status%22%3A%220%22%2C%22user_type%22%3A0%2C%22mobile%22%3A%2218814126846%22%2C%22user_email%22%3A%2240363946%40qq.com%22%2C%22last_login_time%22%3A1544061818%2C%22last_login_ip%22%3A%22127.0.0.1%22%2C%22create_time%22%3A%221970-01-01+08%3A00%3A00%22%7D; PHPSESSID=can1l1nugjhpmmd7jbsnjvle42',
+  'accept-language' => 'zh-CN,zh;q=0.9,ja;q=0.8,en;q=0.7',
+  'accept-encoding' => 'gzip, deflate',
+  'purpose' => 'prefetch',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.169 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'tp.test',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-12-24T17:21:06+08:00 ] 127.0.0.1 GET tp.test/admin/Index/index
+[运行时间：0.035002s] [吞吐率：28.57req/s] [内存消耗：1,863.39kb] [文件加载：44]
+[ info ] [ LANG ] E:\phpstudy_pro\WWW\tpframe\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'ADMIN=%7B%22id%22%3A1%2C%22user_login%22%3A%22admin%22%2C%22user_status%22%3A%220%22%2C%22user_type%22%3A0%2C%22mobile%22%3A%2218814126846%22%2C%22user_email%22%3A%2240363946%40qq.com%22%2C%22last_login_time%22%3A1544061818%2C%22last_login_ip%22%3A%22127.0.0.1%22%2C%22create_time%22%3A%221970-01-01+08%3A00%3A00%22%7D; PHPSESSID=can1l1nugjhpmmd7jbsnjvle42',
+  'accept-language' => 'zh-CN,zh;q=0.9,ja;q=0.8,en;q=0.7',
+  'accept-encoding' => 'gzip, deflate',
+  'purpose' => 'prefetch',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.169 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'tp.test',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-12-24T17:21:06+08:00 ] 127.0.0.1 GET tp.test/admin/user/login/login
+[运行时间：0.037003s] [吞吐率：27.02req/s] [内存消耗：1,816.74kb] [文件加载：42]
+[ info ] [ LANG ] E:\phpstudy_pro\WWW\tpframe\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'user',
+    1 => 'login',
+    2 => 'login',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'ADMIN=%7B%22id%22%3A1%2C%22user_login%22%3A%22admin%22%2C%22user_status%22%3A%220%22%2C%22user_type%22%3A0%2C%22mobile%22%3A%2218814126846%22%2C%22user_email%22%3A%2240363946%40qq.com%22%2C%22last_login_time%22%3A1544061818%2C%22last_login_ip%22%3A%22127.0.0.1%22%2C%22create_time%22%3A%221970-01-01+08%3A00%3A00%22%7D; PHPSESSID=can1l1nugjhpmmd7jbsnjvle42',
+  'accept-language' => 'zh-CN,zh;q=0.9,ja;q=0.8,en;q=0.7',
+  'accept-encoding' => 'gzip, deflate',
+  'purpose' => 'prefetch',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.169 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'tp.test',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-12-24T17:21:06+08:00 ] 127.0.0.1 GET tp.test/admin/Index/index
+[运行时间：0.035002s] [吞吐率：28.57req/s] [内存消耗：1,863.39kb] [文件加载：44]
+[ info ] [ LANG ] E:\phpstudy_pro\WWW\tpframe\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'ADMIN=%7B%22id%22%3A1%2C%22user_login%22%3A%22admin%22%2C%22user_status%22%3A%220%22%2C%22user_type%22%3A0%2C%22mobile%22%3A%2218814126846%22%2C%22user_email%22%3A%2240363946%40qq.com%22%2C%22last_login_time%22%3A1544061818%2C%22last_login_ip%22%3A%22127.0.0.1%22%2C%22create_time%22%3A%221970-01-01+08%3A00%3A00%22%7D; PHPSESSID=can1l1nugjhpmmd7jbsnjvle42',
+  'accept-language' => 'zh-CN,zh;q=0.9,ja;q=0.8,en;q=0.7',
+  'accept-encoding' => 'gzip, deflate',
+  'purpose' => 'prefetch',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.169 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'tp.test',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-12-24T17:21:06+08:00 ] 127.0.0.1 GET tp.test/admin/user/login/login
+[运行时间：0.034002s] [吞吐率：29.41req/s] [内存消耗：1,816.74kb] [文件加载：42]
+[ info ] [ LANG ] E:\phpstudy_pro\WWW\tpframe\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'user',
+    1 => 'login',
+    2 => 'login',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'ADMIN=%7B%22id%22%3A1%2C%22user_login%22%3A%22admin%22%2C%22user_status%22%3A%220%22%2C%22user_type%22%3A0%2C%22mobile%22%3A%2218814126846%22%2C%22user_email%22%3A%2240363946%40qq.com%22%2C%22last_login_time%22%3A1544061818%2C%22last_login_ip%22%3A%22127.0.0.1%22%2C%22create_time%22%3A%221970-01-01+08%3A00%3A00%22%7D; PHPSESSID=can1l1nugjhpmmd7jbsnjvle42',
+  'accept-language' => 'zh-CN,zh;q=0.9,ja;q=0.8,en;q=0.7',
+  'accept-encoding' => 'gzip, deflate',
+  'purpose' => 'prefetch',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.169 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'tp.test',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-12-24T17:21:06+08:00 ] 127.0.0.1 GET tp.test/admin/Index/index
+[运行时间：0.035002s] [吞吐率：28.57req/s] [内存消耗：1,863.39kb] [文件加载：44]
+[ info ] [ LANG ] E:\phpstudy_pro\WWW\tpframe\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'ADMIN=%7B%22id%22%3A1%2C%22user_login%22%3A%22admin%22%2C%22user_status%22%3A%220%22%2C%22user_type%22%3A0%2C%22mobile%22%3A%2218814126846%22%2C%22user_email%22%3A%2240363946%40qq.com%22%2C%22last_login_time%22%3A1544061818%2C%22last_login_ip%22%3A%22127.0.0.1%22%2C%22create_time%22%3A%221970-01-01+08%3A00%3A00%22%7D; PHPSESSID=can1l1nugjhpmmd7jbsnjvle42',
+  'accept-language' => 'zh-CN,zh;q=0.9,ja;q=0.8,en;q=0.7',
+  'accept-encoding' => 'gzip, deflate',
+  'purpose' => 'prefetch',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.169 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'tp.test',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-12-24T17:21:06+08:00 ] 127.0.0.1 GET tp.test/admin/user/login/login
+[运行时间：0.047003s] [吞吐率：21.28req/s] [内存消耗：1,816.11kb] [文件加载：42]
+[ info ] [ LANG ] E:\phpstudy_pro\WWW\tpframe\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'user',
+    1 => 'login',
+    2 => 'login',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'ADMIN=%7B%22id%22%3A1%2C%22user_login%22%3A%22admin%22%2C%22user_status%22%3A%220%22%2C%22user_type%22%3A0%2C%22mobile%22%3A%2218814126846%22%2C%22user_email%22%3A%2240363946%40qq.com%22%2C%22last_login_time%22%3A1544061818%2C%22last_login_ip%22%3A%22127.0.0.1%22%2C%22create_time%22%3A%221970-01-01+08%3A00%3A00%22%7D; PHPSESSID=can1l1nugjhpmmd7jbsnjvle42',
+  'accept-language' => 'zh-CN,zh;q=0.9,ja;q=0.8,en;q=0.7',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.169 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'tp.test',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-12-24T17:21:06+08:00 ] 127.0.0.1 GET tp.test/admin/Index/index
+[运行时间：0.040002s] [吞吐率：25.00req/s] [内存消耗：1,862.76kb] [文件加载：44]
+[ info ] [ LANG ] E:\phpstudy_pro\WWW\tpframe\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'ADMIN=%7B%22id%22%3A1%2C%22user_login%22%3A%22admin%22%2C%22user_status%22%3A%220%22%2C%22user_type%22%3A0%2C%22mobile%22%3A%2218814126846%22%2C%22user_email%22%3A%2240363946%40qq.com%22%2C%22last_login_time%22%3A1544061818%2C%22last_login_ip%22%3A%22127.0.0.1%22%2C%22create_time%22%3A%221970-01-01+08%3A00%3A00%22%7D; PHPSESSID=can1l1nugjhpmmd7jbsnjvle42',
+  'accept-language' => 'zh-CN,zh;q=0.9,ja;q=0.8,en;q=0.7',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.169 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'tp.test',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-12-24T17:21:06+08:00 ] 127.0.0.1 GET tp.test/admin/user/login/login
+[运行时间：0.038003s] [吞吐率：26.31req/s] [内存消耗：1,816.11kb] [文件加载：42]
+[ info ] [ LANG ] E:\phpstudy_pro\WWW\tpframe\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'user',
+    1 => 'login',
+    2 => 'login',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'ADMIN=%7B%22id%22%3A1%2C%22user_login%22%3A%22admin%22%2C%22user_status%22%3A%220%22%2C%22user_type%22%3A0%2C%22mobile%22%3A%2218814126846%22%2C%22user_email%22%3A%2240363946%40qq.com%22%2C%22last_login_time%22%3A1544061818%2C%22last_login_ip%22%3A%22127.0.0.1%22%2C%22create_time%22%3A%221970-01-01+08%3A00%3A00%22%7D; PHPSESSID=can1l1nugjhpmmd7jbsnjvle42',
+  'accept-language' => 'zh-CN,zh;q=0.9,ja;q=0.8,en;q=0.7',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.169 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'tp.test',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-12-24T17:21:06+08:00 ] 127.0.0.1 GET tp.test/admin/Index/index
+[运行时间：0.041003s] [吞吐率：24.39req/s] [内存消耗：1,862.76kb] [文件加载：44]
+[ info ] [ LANG ] E:\phpstudy_pro\WWW\tpframe\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'ADMIN=%7B%22id%22%3A1%2C%22user_login%22%3A%22admin%22%2C%22user_status%22%3A%220%22%2C%22user_type%22%3A0%2C%22mobile%22%3A%2218814126846%22%2C%22user_email%22%3A%2240363946%40qq.com%22%2C%22last_login_time%22%3A1544061818%2C%22last_login_ip%22%3A%22127.0.0.1%22%2C%22create_time%22%3A%221970-01-01+08%3A00%3A00%22%7D; PHPSESSID=can1l1nugjhpmmd7jbsnjvle42',
+  'accept-language' => 'zh-CN,zh;q=0.9,ja;q=0.8,en;q=0.7',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.169 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'tp.test',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-12-24T17:21:06+08:00 ] 127.0.0.1 GET tp.test/admin/Index/index
+[运行时间：0.045002s] [吞吐率：22.22req/s] [内存消耗：1,863.40kb] [文件加载：44]
+[ info ] [ LANG ] E:\phpstudy_pro\WWW\tpframe\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'ADMIN=%7B%22id%22%3A1%2C%22user_login%22%3A%22admin%22%2C%22user_status%22%3A%220%22%2C%22user_type%22%3A0%2C%22mobile%22%3A%2218814126846%22%2C%22user_email%22%3A%2240363946%40qq.com%22%2C%22last_login_time%22%3A1544061818%2C%22last_login_ip%22%3A%22127.0.0.1%22%2C%22create_time%22%3A%221970-01-01+08%3A00%3A00%22%7D; PHPSESSID=can1l1nugjhpmmd7jbsnjvle42',
+  'accept-language' => 'zh-CN,zh;q=0.9,ja;q=0.8,en;q=0.7',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.169 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'tp.test',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-12-24T17:21:06+08:00 ] 127.0.0.1 GET tp.test/admin/user/login/login
+[运行时间：0.034002s] [吞吐率：29.41req/s] [内存消耗：1,816.75kb] [文件加载：42]
+[ info ] [ LANG ] E:\phpstudy_pro\WWW\tpframe\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'user',
+    1 => 'login',
+    2 => 'login',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'ADMIN=%7B%22id%22%3A1%2C%22user_login%22%3A%22admin%22%2C%22user_status%22%3A%220%22%2C%22user_type%22%3A0%2C%22mobile%22%3A%2218814126846%22%2C%22user_email%22%3A%2240363946%40qq.com%22%2C%22last_login_time%22%3A1544061818%2C%22last_login_ip%22%3A%22127.0.0.1%22%2C%22create_time%22%3A%221970-01-01+08%3A00%3A00%22%7D; PHPSESSID=can1l1nugjhpmmd7jbsnjvle42',
+  'accept-language' => 'zh-CN,zh;q=0.9,ja;q=0.8,en;q=0.7',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.169 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'tp.test',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-12-24T17:21:06+08:00 ] 127.0.0.1 GET tp.test/admin/Index/index
+[运行时间：0.034002s] [吞吐率：29.41req/s] [内存消耗：1,863.40kb] [文件加载：44]
+[ info ] [ LANG ] E:\phpstudy_pro\WWW\tpframe\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'ADMIN=%7B%22id%22%3A1%2C%22user_login%22%3A%22admin%22%2C%22user_status%22%3A%220%22%2C%22user_type%22%3A0%2C%22mobile%22%3A%2218814126846%22%2C%22user_email%22%3A%2240363946%40qq.com%22%2C%22last_login_time%22%3A1544061818%2C%22last_login_ip%22%3A%22127.0.0.1%22%2C%22create_time%22%3A%221970-01-01+08%3A00%3A00%22%7D; PHPSESSID=can1l1nugjhpmmd7jbsnjvle42',
+  'accept-language' => 'zh-CN,zh;q=0.9,ja;q=0.8,en;q=0.7',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.169 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'tp.test',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-12-24T17:21:07+08:00 ] 127.0.0.1 GET tp.test/admin/user/login/login
+[运行时间：0.040002s] [吞吐率：25.00req/s] [内存消耗：1,816.75kb] [文件加载：42]
+[ info ] [ LANG ] E:\phpstudy_pro\WWW\tpframe\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'user',
+    1 => 'login',
+    2 => 'login',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'ADMIN=%7B%22id%22%3A1%2C%22user_login%22%3A%22admin%22%2C%22user_status%22%3A%220%22%2C%22user_type%22%3A0%2C%22mobile%22%3A%2218814126846%22%2C%22user_email%22%3A%2240363946%40qq.com%22%2C%22last_login_time%22%3A1544061818%2C%22last_login_ip%22%3A%22127.0.0.1%22%2C%22create_time%22%3A%221970-01-01+08%3A00%3A00%22%7D; PHPSESSID=can1l1nugjhpmmd7jbsnjvle42',
+  'accept-language' => 'zh-CN,zh;q=0.9,ja;q=0.8,en;q=0.7',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.169 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'tp.test',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-12-24T17:21:07+08:00 ] 127.0.0.1 GET tp.test/admin/Index/index
+[运行时间：0.033001s] [吞吐率：30.30req/s] [内存消耗：1,863.40kb] [文件加载：44]
+[ info ] [ LANG ] E:\phpstudy_pro\WWW\tpframe\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'ADMIN=%7B%22id%22%3A1%2C%22user_login%22%3A%22admin%22%2C%22user_status%22%3A%220%22%2C%22user_type%22%3A0%2C%22mobile%22%3A%2218814126846%22%2C%22user_email%22%3A%2240363946%40qq.com%22%2C%22last_login_time%22%3A1544061818%2C%22last_login_ip%22%3A%22127.0.0.1%22%2C%22create_time%22%3A%221970-01-01+08%3A00%3A00%22%7D; PHPSESSID=can1l1nugjhpmmd7jbsnjvle42',
+  'accept-language' => 'zh-CN,zh;q=0.9,ja;q=0.8,en;q=0.7',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.169 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'tp.test',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-12-24T17:21:07+08:00 ] 127.0.0.1 GET tp.test/admin/user/login/login
+[运行时间：0.033002s] [吞吐率：30.30req/s] [内存消耗：1,816.75kb] [文件加载：42]
+[ info ] [ LANG ] E:\phpstudy_pro\WWW\tpframe\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'user',
+    1 => 'login',
+    2 => 'login',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'ADMIN=%7B%22id%22%3A1%2C%22user_login%22%3A%22admin%22%2C%22user_status%22%3A%220%22%2C%22user_type%22%3A0%2C%22mobile%22%3A%2218814126846%22%2C%22user_email%22%3A%2240363946%40qq.com%22%2C%22last_login_time%22%3A1544061818%2C%22last_login_ip%22%3A%22127.0.0.1%22%2C%22create_time%22%3A%221970-01-01+08%3A00%3A00%22%7D; PHPSESSID=can1l1nugjhpmmd7jbsnjvle42',
+  'accept-language' => 'zh-CN,zh;q=0.9,ja;q=0.8,en;q=0.7',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.169 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'tp.test',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-12-24T17:21:07+08:00 ] 127.0.0.1 GET tp.test/admin/Index/index
+[运行时间：0.034002s] [吞吐率：29.41req/s] [内存消耗：1,863.40kb] [文件加载：44]
+[ info ] [ LANG ] E:\phpstudy_pro\WWW\tpframe\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'ADMIN=%7B%22id%22%3A1%2C%22user_login%22%3A%22admin%22%2C%22user_status%22%3A%220%22%2C%22user_type%22%3A0%2C%22mobile%22%3A%2218814126846%22%2C%22user_email%22%3A%2240363946%40qq.com%22%2C%22last_login_time%22%3A1544061818%2C%22last_login_ip%22%3A%22127.0.0.1%22%2C%22create_time%22%3A%221970-01-01+08%3A00%3A00%22%7D; PHPSESSID=can1l1nugjhpmmd7jbsnjvle42',
+  'accept-language' => 'zh-CN,zh;q=0.9,ja;q=0.8,en;q=0.7',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.169 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'tp.test',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-12-24T17:21:07+08:00 ] 127.0.0.1 GET tp.test/admin/user/login/login
+[运行时间：0.032001s] [吞吐率：31.25req/s] [内存消耗：1,816.75kb] [文件加载：42]
+[ info ] [ LANG ] E:\phpstudy_pro\WWW\tpframe\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'user',
+    1 => 'login',
+    2 => 'login',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'ADMIN=%7B%22id%22%3A1%2C%22user_login%22%3A%22admin%22%2C%22user_status%22%3A%220%22%2C%22user_type%22%3A0%2C%22mobile%22%3A%2218814126846%22%2C%22user_email%22%3A%2240363946%40qq.com%22%2C%22last_login_time%22%3A1544061818%2C%22last_login_ip%22%3A%22127.0.0.1%22%2C%22create_time%22%3A%221970-01-01+08%3A00%3A00%22%7D; PHPSESSID=can1l1nugjhpmmd7jbsnjvle42',
+  'accept-language' => 'zh-CN,zh;q=0.9,ja;q=0.8,en;q=0.7',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.169 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'tp.test',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-12-24T17:21:07+08:00 ] 127.0.0.1 GET tp.test/admin/Index/index
+[运行时间：0.034002s] [吞吐率：29.41req/s] [内存消耗：1,863.40kb] [文件加载：44]
+[ info ] [ LANG ] E:\phpstudy_pro\WWW\tpframe\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'ADMIN=%7B%22id%22%3A1%2C%22user_login%22%3A%22admin%22%2C%22user_status%22%3A%220%22%2C%22user_type%22%3A0%2C%22mobile%22%3A%2218814126846%22%2C%22user_email%22%3A%2240363946%40qq.com%22%2C%22last_login_time%22%3A1544061818%2C%22last_login_ip%22%3A%22127.0.0.1%22%2C%22create_time%22%3A%221970-01-01+08%3A00%3A00%22%7D; PHPSESSID=can1l1nugjhpmmd7jbsnjvle42',
+  'accept-language' => 'zh-CN,zh;q=0.9,ja;q=0.8,en;q=0.7',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.169 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'tp.test',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-12-24T17:21:07+08:00 ] 127.0.0.1 GET tp.test/admin/user/login/login
+[运行时间：0.035002s] [吞吐率：28.57req/s] [内存消耗：1,816.75kb] [文件加载：42]
+[ info ] [ LANG ] E:\phpstudy_pro\WWW\tpframe\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'user',
+    1 => 'login',
+    2 => 'login',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'ADMIN=%7B%22id%22%3A1%2C%22user_login%22%3A%22admin%22%2C%22user_status%22%3A%220%22%2C%22user_type%22%3A0%2C%22mobile%22%3A%2218814126846%22%2C%22user_email%22%3A%2240363946%40qq.com%22%2C%22last_login_time%22%3A1544061818%2C%22last_login_ip%22%3A%22127.0.0.1%22%2C%22create_time%22%3A%221970-01-01+08%3A00%3A00%22%7D; PHPSESSID=can1l1nugjhpmmd7jbsnjvle42',
+  'accept-language' => 'zh-CN,zh;q=0.9,ja;q=0.8,en;q=0.7',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.169 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'tp.test',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-12-24T17:21:07+08:00 ] 127.0.0.1 GET tp.test/admin/Index/index
+[运行时间：0.033002s] [吞吐率：30.30req/s] [内存消耗：1,863.40kb] [文件加载：44]
+[ info ] [ LANG ] E:\phpstudy_pro\WWW\tpframe\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'ADMIN=%7B%22id%22%3A1%2C%22user_login%22%3A%22admin%22%2C%22user_status%22%3A%220%22%2C%22user_type%22%3A0%2C%22mobile%22%3A%2218814126846%22%2C%22user_email%22%3A%2240363946%40qq.com%22%2C%22last_login_time%22%3A1544061818%2C%22last_login_ip%22%3A%22127.0.0.1%22%2C%22create_time%22%3A%221970-01-01+08%3A00%3A00%22%7D; PHPSESSID=can1l1nugjhpmmd7jbsnjvle42',
+  'accept-language' => 'zh-CN,zh;q=0.9,ja;q=0.8,en;q=0.7',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.169 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'tp.test',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-12-24T17:21:07+08:00 ] 127.0.0.1 GET tp.test/admin/user/login/login
+[运行时间：0.034002s] [吞吐率：29.41req/s] [内存消耗：1,816.75kb] [文件加载：42]
+[ info ] [ LANG ] E:\phpstudy_pro\WWW\tpframe\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'user',
+    1 => 'login',
+    2 => 'login',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'ADMIN=%7B%22id%22%3A1%2C%22user_login%22%3A%22admin%22%2C%22user_status%22%3A%220%22%2C%22user_type%22%3A0%2C%22mobile%22%3A%2218814126846%22%2C%22user_email%22%3A%2240363946%40qq.com%22%2C%22last_login_time%22%3A1544061818%2C%22last_login_ip%22%3A%22127.0.0.1%22%2C%22create_time%22%3A%221970-01-01+08%3A00%3A00%22%7D; PHPSESSID=can1l1nugjhpmmd7jbsnjvle42',
+  'accept-language' => 'zh-CN,zh;q=0.9,ja;q=0.8,en;q=0.7',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.169 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'tp.test',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-12-24T17:21:07+08:00 ] 127.0.0.1 GET tp.test/admin/Index/index
+[运行时间：0.034002s] [吞吐率：29.41req/s] [内存消耗：1,863.40kb] [文件加载：44]
+[ info ] [ LANG ] E:\phpstudy_pro\WWW\tpframe\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'ADMIN=%7B%22id%22%3A1%2C%22user_login%22%3A%22admin%22%2C%22user_status%22%3A%220%22%2C%22user_type%22%3A0%2C%22mobile%22%3A%2218814126846%22%2C%22user_email%22%3A%2240363946%40qq.com%22%2C%22last_login_time%22%3A1544061818%2C%22last_login_ip%22%3A%22127.0.0.1%22%2C%22create_time%22%3A%221970-01-01+08%3A00%3A00%22%7D; PHPSESSID=can1l1nugjhpmmd7jbsnjvle42',
+  'accept-language' => 'zh-CN,zh;q=0.9,ja;q=0.8,en;q=0.7',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.169 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'tp.test',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-12-24T17:21:07+08:00 ] 127.0.0.1 GET tp.test/admin/user/login/login
+[运行时间：0.033002s] [吞吐率：30.30req/s] [内存消耗：1,816.75kb] [文件加载：42]
+[ info ] [ LANG ] E:\phpstudy_pro\WWW\tpframe\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'user',
+    1 => 'login',
+    2 => 'login',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'ADMIN=%7B%22id%22%3A1%2C%22user_login%22%3A%22admin%22%2C%22user_status%22%3A%220%22%2C%22user_type%22%3A0%2C%22mobile%22%3A%2218814126846%22%2C%22user_email%22%3A%2240363946%40qq.com%22%2C%22last_login_time%22%3A1544061818%2C%22last_login_ip%22%3A%22127.0.0.1%22%2C%22create_time%22%3A%221970-01-01+08%3A00%3A00%22%7D; PHPSESSID=can1l1nugjhpmmd7jbsnjvle42',
+  'accept-language' => 'zh-CN,zh;q=0.9,ja;q=0.8,en;q=0.7',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.169 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'tp.test',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-12-24T17:21:07+08:00 ] 127.0.0.1 GET tp.test/admin/Index/index
+[运行时间：0.037003s] [吞吐率：27.02req/s] [内存消耗：1,863.40kb] [文件加载：44]
+[ info ] [ LANG ] E:\phpstudy_pro\WWW\tpframe\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'ADMIN=%7B%22id%22%3A1%2C%22user_login%22%3A%22admin%22%2C%22user_status%22%3A%220%22%2C%22user_type%22%3A0%2C%22mobile%22%3A%2218814126846%22%2C%22user_email%22%3A%2240363946%40qq.com%22%2C%22last_login_time%22%3A1544061818%2C%22last_login_ip%22%3A%22127.0.0.1%22%2C%22create_time%22%3A%221970-01-01+08%3A00%3A00%22%7D; PHPSESSID=can1l1nugjhpmmd7jbsnjvle42',
+  'accept-language' => 'zh-CN,zh;q=0.9,ja;q=0.8,en;q=0.7',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.169 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'tp.test',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-12-24T17:21:07+08:00 ] 127.0.0.1 GET tp.test/admin/user/login/login
+[运行时间：0.032002s] [吞吐率：31.25req/s] [内存消耗：1,816.75kb] [文件加载：42]
+[ info ] [ LANG ] E:\phpstudy_pro\WWW\tpframe\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'user',
+    1 => 'login',
+    2 => 'login',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'ADMIN=%7B%22id%22%3A1%2C%22user_login%22%3A%22admin%22%2C%22user_status%22%3A%220%22%2C%22user_type%22%3A0%2C%22mobile%22%3A%2218814126846%22%2C%22user_email%22%3A%2240363946%40qq.com%22%2C%22last_login_time%22%3A1544061818%2C%22last_login_ip%22%3A%22127.0.0.1%22%2C%22create_time%22%3A%221970-01-01+08%3A00%3A00%22%7D; PHPSESSID=can1l1nugjhpmmd7jbsnjvle42',
+  'accept-language' => 'zh-CN,zh;q=0.9,ja;q=0.8,en;q=0.7',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.169 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'tp.test',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-12-24T17:21:07+08:00 ] 127.0.0.1 GET tp.test/admin/Index/index
+[运行时间：0.034002s] [吞吐率：29.41req/s] [内存消耗：1,863.40kb] [文件加载：44]
+[ info ] [ LANG ] E:\phpstudy_pro\WWW\tpframe\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'ADMIN=%7B%22id%22%3A1%2C%22user_login%22%3A%22admin%22%2C%22user_status%22%3A%220%22%2C%22user_type%22%3A0%2C%22mobile%22%3A%2218814126846%22%2C%22user_email%22%3A%2240363946%40qq.com%22%2C%22last_login_time%22%3A1544061818%2C%22last_login_ip%22%3A%22127.0.0.1%22%2C%22create_time%22%3A%221970-01-01+08%3A00%3A00%22%7D; PHPSESSID=can1l1nugjhpmmd7jbsnjvle42',
+  'accept-language' => 'zh-CN,zh;q=0.9,ja;q=0.8,en;q=0.7',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.169 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'tp.test',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-12-24T17:21:07+08:00 ] 127.0.0.1 GET tp.test/admin/user/login/login
+[运行时间：0.034002s] [吞吐率：29.41req/s] [内存消耗：1,816.75kb] [文件加载：42]
+[ info ] [ LANG ] E:\phpstudy_pro\WWW\tpframe\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'user',
+    1 => 'login',
+    2 => 'login',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'ADMIN=%7B%22id%22%3A1%2C%22user_login%22%3A%22admin%22%2C%22user_status%22%3A%220%22%2C%22user_type%22%3A0%2C%22mobile%22%3A%2218814126846%22%2C%22user_email%22%3A%2240363946%40qq.com%22%2C%22last_login_time%22%3A1544061818%2C%22last_login_ip%22%3A%22127.0.0.1%22%2C%22create_time%22%3A%221970-01-01+08%3A00%3A00%22%7D; PHPSESSID=can1l1nugjhpmmd7jbsnjvle42',
+  'accept-language' => 'zh-CN,zh;q=0.9,ja;q=0.8,en;q=0.7',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.169 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'tp.test',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-12-24T17:21:07+08:00 ] 127.0.0.1 GET tp.test/admin/Index/index
+[运行时间：0.035002s] [吞吐率：28.57req/s] [内存消耗：1,863.40kb] [文件加载：44]
+[ info ] [ LANG ] E:\phpstudy_pro\WWW\tpframe\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'ADMIN=%7B%22id%22%3A1%2C%22user_login%22%3A%22admin%22%2C%22user_status%22%3A%220%22%2C%22user_type%22%3A0%2C%22mobile%22%3A%2218814126846%22%2C%22user_email%22%3A%2240363946%40qq.com%22%2C%22last_login_time%22%3A1544061818%2C%22last_login_ip%22%3A%22127.0.0.1%22%2C%22create_time%22%3A%221970-01-01+08%3A00%3A00%22%7D; PHPSESSID=can1l1nugjhpmmd7jbsnjvle42',
+  'accept-language' => 'zh-CN,zh;q=0.9,ja;q=0.8,en;q=0.7',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.169 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'tp.test',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-12-24T17:21:07+08:00 ] 127.0.0.1 GET tp.test/admin/user/login/login
+[运行时间：0.034002s] [吞吐率：29.41req/s] [内存消耗：1,816.75kb] [文件加载：42]
+[ info ] [ LANG ] E:\phpstudy_pro\WWW\tpframe\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'user',
+    1 => 'login',
+    2 => 'login',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'ADMIN=%7B%22id%22%3A1%2C%22user_login%22%3A%22admin%22%2C%22user_status%22%3A%220%22%2C%22user_type%22%3A0%2C%22mobile%22%3A%2218814126846%22%2C%22user_email%22%3A%2240363946%40qq.com%22%2C%22last_login_time%22%3A1544061818%2C%22last_login_ip%22%3A%22127.0.0.1%22%2C%22create_time%22%3A%221970-01-01+08%3A00%3A00%22%7D; PHPSESSID=can1l1nugjhpmmd7jbsnjvle42',
+  'accept-language' => 'zh-CN,zh;q=0.9,ja;q=0.8,en;q=0.7',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.169 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'tp.test',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-12-24T17:21:10+08:00 ] 127.0.0.1 GET tp.test/admin/index/index/index
+[运行时间：0.044003s] [吞吐率：22.73req/s] [内存消耗：1,863.43kb] [文件加载：44]
+[ info ] [ LANG ] E:\phpstudy_pro\WWW\tpframe\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'ADMIN=%7B%22id%22%3A1%2C%22user_login%22%3A%22admin%22%2C%22user_status%22%3A%220%22%2C%22user_type%22%3A0%2C%22mobile%22%3A%2218814126846%22%2C%22user_email%22%3A%2240363946%40qq.com%22%2C%22last_login_time%22%3A1544061818%2C%22last_login_ip%22%3A%22127.0.0.1%22%2C%22create_time%22%3A%221970-01-01+08%3A00%3A00%22%7D; PHPSESSID=can1l1nugjhpmmd7jbsnjvle42',
+  'accept-language' => 'zh-CN,zh;q=0.9,ja;q=0.8,en;q=0.7',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://tp.test/admin/',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.169 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'tp.test',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-12-24T17:21:22+08:00 ] 127.0.0.1 GET tp.test/admin/user/admin/adminlog
+[运行时间：0.051003s] [吞吐率：19.61req/s] [内存消耗：2,646.59kb] [文件加载：51]
+[ info ] [ LANG ] E:\phpstudy_pro\WWW\tpframe\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'user',
+    1 => 'admin',
+    2 => 'adminlog',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'ADMIN=%7B%22id%22%3A1%2C%22user_login%22%3A%22admin%22%2C%22user_status%22%3A%220%22%2C%22user_type%22%3A0%2C%22mobile%22%3A%2218814126846%22%2C%22user_email%22%3A%2240363946%40qq.com%22%2C%22last_login_time%22%3A1544061818%2C%22last_login_ip%22%3A%22127.0.0.1%22%2C%22create_time%22%3A%221970-01-01+08%3A00%3A00%22%7D; PHPSESSID=can1l1nugjhpmmd7jbsnjvle42',
+  'accept-language' => 'zh-CN,zh;q=0.9,ja;q=0.8,en;q=0.7',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://tp.test/admin/user/admin/adminlog',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.169 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'tp.test',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] admin\user\controller\Admin->adminLog[ E:\phpstudy_pro\WWW\tpframe\admin\user\controller\Admin.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] E:\phpstudy_pro\WWW\tpframe\admin/user\view\\adminlog.html [ array (
+  0 => 'log',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:host=127.0.0.1;dbname=tpbase;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_adminlog` [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_adminlog` [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[ 2019-12-24T17:21:25+08:00 ] 127.0.0.1 GET tp.test/admin/user/index/index
+[运行时间：0.032002s] [吞吐率：31.25req/s] [内存消耗：1,279.04kb] [文件加载：35]
+[ info ] [ LANG ] E:\phpstudy_pro\WWW\tpframe\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'user',
+    1 => 'index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'ADMIN=%7B%22id%22%3A1%2C%22user_login%22%3A%22admin%22%2C%22user_status%22%3A%220%22%2C%22user_type%22%3A0%2C%22mobile%22%3A%2218814126846%22%2C%22user_email%22%3A%2240363946%40qq.com%22%2C%22last_login_time%22%3A1544061818%2C%22last_login_ip%22%3A%22127.0.0.1%22%2C%22create_time%22%3A%221970-01-01+08%3A00%3A00%22%7D; PHPSESSID=can1l1nugjhpmmd7jbsnjvle42',
+  'accept-language' => 'zh-CN,zh;q=0.9,ja;q=0.8,en;q=0.7',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://tp.test/admin/user/admin/adminlog',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.169 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'tp.test',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-12-24T17:21:27+08:00 ] 127.0.0.1 GET tp.test/admin/user/admin/adminlog
+[运行时间：0.055003s] [吞吐率：18.18req/s] [内存消耗：2,646.59kb] [文件加载：51]
+[ info ] [ LANG ] E:\phpstudy_pro\WWW\tpframe\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'user',
+    1 => 'admin',
+    2 => 'adminlog',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'ADMIN=%7B%22id%22%3A1%2C%22user_login%22%3A%22admin%22%2C%22user_status%22%3A%220%22%2C%22user_type%22%3A0%2C%22mobile%22%3A%2218814126846%22%2C%22user_email%22%3A%2240363946%40qq.com%22%2C%22last_login_time%22%3A1544061818%2C%22last_login_ip%22%3A%22127.0.0.1%22%2C%22create_time%22%3A%221970-01-01+08%3A00%3A00%22%7D; PHPSESSID=can1l1nugjhpmmd7jbsnjvle42',
+  'accept-language' => 'zh-CN,zh;q=0.9,ja;q=0.8,en;q=0.7',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://tp.test/admin/user/admin/adminlog',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.169 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'tp.test',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] admin\user\controller\Admin->adminLog[ E:\phpstudy_pro\WWW\tpframe\admin\user\controller\Admin.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] E:\phpstudy_pro\WWW\tpframe\admin/user\view\\adminlog.html [ array (
+  0 => 'log',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:host=127.0.0.1;dbname=tpbase;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_adminlog` [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_adminlog` [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[ 2019-12-24T17:21:30+08:00 ] 127.0.0.1 GET tp.test/admin/user/admin/adminlog
+[运行时间：0.056003s] [吞吐率：17.86req/s] [内存消耗：2,646.59kb] [文件加载：51]
+[ info ] [ LANG ] E:\phpstudy_pro\WWW\tpframe\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'user',
+    1 => 'admin',
+    2 => 'adminlog',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'ADMIN=%7B%22id%22%3A1%2C%22user_login%22%3A%22admin%22%2C%22user_status%22%3A%220%22%2C%22user_type%22%3A0%2C%22mobile%22%3A%2218814126846%22%2C%22user_email%22%3A%2240363946%40qq.com%22%2C%22last_login_time%22%3A1544061818%2C%22last_login_ip%22%3A%22127.0.0.1%22%2C%22create_time%22%3A%221970-01-01+08%3A00%3A00%22%7D; PHPSESSID=can1l1nugjhpmmd7jbsnjvle42',
+  'accept-language' => 'zh-CN,zh;q=0.9,ja;q=0.8,en;q=0.7',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://tp.test/admin/user/admin/adminlog',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.169 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'tp.test',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] admin\user\controller\Admin->adminLog[ E:\phpstudy_pro\WWW\tpframe\admin\user\controller\Admin.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] E:\phpstudy_pro\WWW\tpframe\admin/user\view\\adminlog.html [ array (
+  0 => 'log',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:host=127.0.0.1;dbname=tpbase;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_adminlog` [ RunTime:0.002000s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_adminlog` [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2019-12-24T17:21:31+08:00 ] 127.0.0.1 GET tp.test/admin/user/admin/editpass
+[运行时间：0.054003s] [吞吐率：18.52req/s] [内存消耗：1,865.23kb] [文件加载：43]
+[ info ] [ LANG ] E:\phpstudy_pro\WWW\tpframe\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'user',
+    1 => 'admin',
+    2 => 'editpass',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'ADMIN=%7B%22id%22%3A1%2C%22user_login%22%3A%22admin%22%2C%22user_status%22%3A%220%22%2C%22user_type%22%3A0%2C%22mobile%22%3A%2218814126846%22%2C%22user_email%22%3A%2240363946%40qq.com%22%2C%22last_login_time%22%3A1544061818%2C%22last_login_ip%22%3A%22127.0.0.1%22%2C%22create_time%22%3A%221970-01-01+08%3A00%3A00%22%7D; PHPSESSID=can1l1nugjhpmmd7jbsnjvle42',
+  'accept-language' => 'zh-CN,zh;q=0.9,ja;q=0.8,en;q=0.7',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://tp.test/admin/user/admin/adminlog',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.169 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'tp.test',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] admin\user\controller\Admin->editPass[ E:\phpstudy_pro\WWW\tpframe\admin\user\controller\Admin.php ]
+[ info ] [ VIEW ] E:\phpstudy_pro\WWW\tpframe\admin/user\view\\editpass.html [ array (
+  0 => 'admin',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-12-24T17:21:47+08:00 ] 127.0.0.1 GET tp.test/admin/user/admin/editpass
+[运行时间：0.056004s] [吞吐率：17.86req/s] [内存消耗：1,778.67kb] [文件加载：40]
+[ info ] [ LANG ] E:\phpstudy_pro\WWW\tpframe\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'user',
+    1 => 'admin',
+    2 => 'editpass',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'ADMIN=%7B%22id%22%3A1%2C%22user_login%22%3A%22admin%22%2C%22user_status%22%3A%220%22%2C%22user_type%22%3A0%2C%22mobile%22%3A%2218814126846%22%2C%22user_email%22%3A%2240363946%40qq.com%22%2C%22last_login_time%22%3A1544061818%2C%22last_login_ip%22%3A%22127.0.0.1%22%2C%22create_time%22%3A%221970-01-01+08%3A00%3A00%22%7D; PHPSESSID=can1l1nugjhpmmd7jbsnjvle42',
+  'accept-language' => 'zh-CN,zh;q=0.9,ja;q=0.8,en;q=0.7',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://tp.test/admin/user/admin/adminlog',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.169 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'tp.test',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-12-24T17:22:09+08:00 ] 127.0.0.1 GET tp.test/admin/user/admin/editpass
+[运行时间：0.038002s] [吞吐率：26.31req/s] [内存消耗：1,778.67kb] [文件加载：40]
+[ info ] [ LANG ] E:\phpstudy_pro\WWW\tpframe\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'user',
+    1 => 'admin',
+    2 => 'editpass',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'ADMIN=%7B%22id%22%3A1%2C%22user_login%22%3A%22admin%22%2C%22user_status%22%3A%220%22%2C%22user_type%22%3A0%2C%22mobile%22%3A%2218814126846%22%2C%22user_email%22%3A%2240363946%40qq.com%22%2C%22last_login_time%22%3A1544061818%2C%22last_login_ip%22%3A%22127.0.0.1%22%2C%22create_time%22%3A%221970-01-01+08%3A00%3A00%22%7D; PHPSESSID=can1l1nugjhpmmd7jbsnjvle42',
+  'accept-language' => 'zh-CN,zh;q=0.9,ja;q=0.8,en;q=0.7',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://tp.test/admin/user/admin/adminlog',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.169 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'tp.test',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-12-24T17:22:53+08:00 ] 127.0.0.1 GET tp.test/admin/user/admin/editpass
+[运行时间：0.046003s] [吞吐率：21.74req/s] [内存消耗：1,865.92kb] [文件加载：43]
+[ info ] [ LANG ] E:\phpstudy_pro\WWW\tpframe\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'user',
+    1 => 'admin',
+    2 => 'editpass',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'ADMIN=%7B%22id%22%3A1%2C%22user_login%22%3A%22admin%22%2C%22user_status%22%3A%220%22%2C%22user_type%22%3A0%2C%22mobile%22%3A%2218814126846%22%2C%22user_email%22%3A%2240363946%40qq.com%22%2C%22last_login_time%22%3A1544061818%2C%22last_login_ip%22%3A%22127.0.0.1%22%2C%22create_time%22%3A%221970-01-01+08%3A00%3A00%22%7D; PHPSESSID=can1l1nugjhpmmd7jbsnjvle42',
+  'accept-language' => 'zh-CN,zh;q=0.9,ja;q=0.8,en;q=0.7',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://tp.test/admin/user/admin/adminlog',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.169 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'tp.test',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] admin\user\controller\Admin->editPass[ E:\phpstudy_pro\WWW\tpframe\admin\user\controller\Admin.php ]
+[ info ] [ VIEW ] E:\phpstudy_pro\WWW\tpframe\admin/user\view\\editpass.html [ array (
+  0 => 'admin',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-12-24T17:27:10+08:00 ] 127.0.0.1 GET tp.test/admin/user/admin/adminlog
+[运行时间：0.068004s] [吞吐率：14.71req/s] [内存消耗：2,647.29kb] [文件加载：51]
+[ info ] [ LANG ] E:\phpstudy_pro\WWW\tpframe\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'user',
+    1 => 'admin',
+    2 => 'adminlog',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'ADMIN=%7B%22id%22%3A1%2C%22user_login%22%3A%22admin%22%2C%22user_status%22%3A%220%22%2C%22user_type%22%3A0%2C%22mobile%22%3A%2218814126846%22%2C%22user_email%22%3A%2240363946%40qq.com%22%2C%22last_login_time%22%3A1544061818%2C%22last_login_ip%22%3A%22127.0.0.1%22%2C%22create_time%22%3A%221970-01-01+08%3A00%3A00%22%7D; PHPSESSID=can1l1nugjhpmmd7jbsnjvle42',
+  'accept-language' => 'zh-CN,zh;q=0.9,ja;q=0.8,en;q=0.7',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://tp.test/admin/user/admin/editpass',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.169 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'tp.test',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] admin\user\controller\Admin->adminLog[ E:\phpstudy_pro\WWW\tpframe\admin\user\controller\Admin.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] E:\phpstudy_pro\WWW\tpframe\admin/user\view\\adminlog.html [ array (
+  0 => 'log',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:host=127.0.0.1;dbname=tpbase;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_adminlog` [ RunTime:0.002000s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_adminlog` [ RunTime:0.000000s ]

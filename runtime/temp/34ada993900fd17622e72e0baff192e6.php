@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:2:{s:55:"E:\phpstudy_pro\WWW\tpframe/admin/user\view\\admin.html";i:1577669032;s:57:"E:\phpstudy_pro\WWW\tpframe\admin\common\view\header.html";i:1577691051;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:2:{s:61:"E:\phpstudy_pro\WWW\tpframe\admin/user\view\\admin_index.html";i:1577762960;s:57:"E:\phpstudy_pro\WWW\tpframe\admin\common\view\header.html";i:1577691051;}*/ ?>
 <!DOCTYPE html>
 <html lang="zh-cn">
 <head>
@@ -88,14 +88,11 @@
                 <ul class="search">
                     <li>
                         <button type="button"  class="button border-green" id="checkall"><span class="icon-check"></span> 全选</button>
-                        <button type="submit" class="button border-red"><span class="icon-trash-o"></span> 批量删除</button>
+                        <button type="submit"  class="button border-red" onclick="return DelSelect()"><span class="icon-trash-o"></span> 批量删除</button>
                         <button onclick="window.location.href='<?php echo url('user/Admin/add'); ?>'" type="button"  class="button border-green"><span class="icon-plus-square-o" ></span> 添加管理员</button>
                     </li>
                 </ul>
-
             </div>
-
-
             <table class="table table-hover text-center">
                 <tr>
                     <th width="120">管理员ID</th>
@@ -109,7 +106,7 @@
                 </tr>
                 <?php if(is_array($admin) || $admin instanceof \think\Collection || $admin instanceof \think\Paginator): $i = 0; $__LIST__ = $admin;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$admins): $mod = ($i % 2 );++$i;?>
                 <tr>
-                    <td><input type="checkbox" name="id[]" value="1" />
+                    <td><input type="checkbox" name="id[]" value="<?php echo $admins['id']; ?>" />
                         <?php echo $admins['id']; ?></td>
                     <td> <?php echo $admins['user_login']; ?></td>
 
@@ -119,7 +116,7 @@
                     <td><?php echo $admins['user_status']; ?></td>
                     <td><?php echo $admins['create_time']; ?></td>
 
-                    <td><div class="button-group"> <a class="button border-red" href="javascript:void(0)" onclick="return del(1)"><span class="icon-trash-o"></span> 删除</a> </div></td>
+                    <td><div class="button-group"> <a class="button border-red" href="javascript:void(0)" onclick="return del(<?php echo $admins['id']; ?>)"><span class="icon-trash-o"></span> 删除</a> </div></td>
                 </tr>
 
                 <?php endforeach; endif; else: echo "" ;endif; ?>
@@ -150,9 +147,23 @@
     <script type="text/javascript">
 
         function del(id){
-            if(confirm("您确定要删除吗?")){
+            layer.alert("您确认要删除内容吗？", {title: "提示",btn:'确定'},function () {
+                $.ajax({
+                    url:"<?php echo url('Admin/deleteAdmin');?>",
+                    type:'POST',
+                    data:{id:id},
+                    success:function (res) {
+                        if(res.code == 1){
+                            layer.alert(res.msg, {title: "提示",btn:'确定'},function () {
+                                history.go(0)
+                            });
+                        }else{
+                            layer.alert(res.msg, {title: "提示",btn:'确定'});
+                        }
 
-            }
+                    }
+                })
+            });
         }
 
         $("#checkall").click(function(){
@@ -168,17 +179,37 @@
 
         function DelSelect(){
             var Checkbox=false;
+            var str = '';
             $("input[name='id[]']").each(function(){
+
                 if (this.checked==true) {
                     Checkbox=true;
+                    console.log(this)
+                    str=str+$(this).val()+',';
                 }
             });
             if (Checkbox){
-                var t=confirm("您确认要删除选中的内容吗？");
-                if (t==false) return false;
+
+                layer.alert("您确认要删除选中的内容吗？", {title: "提示",btn:'确定'},function () {
+                    $.ajax({
+                        url:"<?php echo url('Admin/deleteAdmin');?>",
+                        type:'POST',
+                        data:{id:str.slice(0,-1)},
+                        success:function (res) {
+                            if(res.code == 1){
+                                layer.alert(res.msg, {title: "提示",btn:'确定'},function () {
+                                    history.go(0)
+                                });
+                            }else{
+                                layer.alert(res.msg, {title: "提示",btn:'确定'});
+                            }
+                        }
+                    })
+                });
+                return false;
             }
             else{
-                alert("请选择您要删除的内容!");
+                layer.alert("请选择您要删除的内容!", {title: "提示",btn:'确定'});
                 return false;
             }
         }
